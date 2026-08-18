@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <ChainID>7290000000001</ChainID>
+  <SubChainID>1</SubChainID>
+  <StoreID>042</StoreID>
+  <BikoretNo>7</BikoretNo>
+  <Items>
+    <Item>
+      <ItemCode>4006381333931</ItemCode>
+      <ItemType>1</ItemType>
+      <ItemName>קפה Espresso 10 יחידות</ItemName>
+      <ManufacturerName>Demo Coffee</ManufacturerName>
+      <UnitQty>10 יחידות</UnitQty>
+      <Quantity>10</Quantity>
+      <UnitOfMeasure>יחידה</UnitOfMeasure>
+      <ItemPrice>19.90</ItemPrice>
+      <UnitOfMeasurePrice>1.99</UnitOfMeasurePrice>
+      <AllowDiscount>1</AllowDiscount>
+      <ItemStatus>1</ItemStatus>
+      <PriceUpdateDate>2026-08-11</PriceUpdateDate>
+      <PriceUpdateTime>12:30:00</PriceUpdateTime>
+    </Item>
+    <iTeM>
+      <ItemCode>BAD-ITEM</ItemCode>
+      <ItemName>Malformed price is rejected, not the file</ItemName>
+      <ItemPrice>-1</ItemPrice>
+    </iTeM>
+  </Items>
+</Root>

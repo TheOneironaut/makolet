@@ -1,0 +1,107 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  UV_VERSION: 0.12.3
+  UV_PYTHON: 3.14.7
+  UV_FROZEN: "1"
+
+jobs:
+  quality-security-unit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, MIT
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7, MIT/Apache-2.0
+        with:
+          version: "0.12.3"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install pinned Python and locked dependencies
+        run: |
+          uv python install 3.14.7
+          uv sync --all-groups --frozen
+          uv lock --check
+
+      - name: Check formatting, lint, typing, and shell syntax
+        run: |
+          uv run ruff format --check .
+          uv run ruff check .
+          uv run mypy src tests benchmarks
+          uv run python scripts/check_docs.py
+          bash -n scripts/*.sh
+
+      - name: Audit dependencies, licenses, SBOM, and image pins
+        run: |
+          audit_requirements="$(mktemp)"
+          cleanup_audit() {
+            rm -f -- "$audit_requirements"
+          }
+          trap cleanup_audit EXIT
+          uv run python scripts/check_secrets.py
+          uv export --frozen --all-groups --no-emit-project \
+            --format requirements-txt --output-file "$audit_requirements" >/dev/null
+          uv run pip-audit --requirement "$audit_requirements" --no-deps \
+            --disable-pip --progress-spinner off --strict
+          uv run pip-audit --requirement build-constraints.txt --no-deps \
+            --disable-pip --progress-spinner off --strict
+          uv run python scripts/check_licenses.py
+          uv run python scripts/check_build_constraints.py
+          uv export --preview-features sbom-export --frozen --all-groups \
+            --format cyclonedx1.5 --output-file .ci-sbom.json >/dev/null
+          uv run python scripts/check_sbom.py sbom.cdx.json .ci-sbom.json
+          uv run python scripts/check_container_images.py
+          uv run python scripts/check_distribution.py --reproducible
+
+      - name: Run offline unit and contract tests
+        run: uv run pytest --no-cov -m "not integration and not live and not benchmark"
+
+  postgres-seaweedfs-containers:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, MIT
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7, MIT/Apache-2.0
+        with:
+          version: "0.12.3"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install pinned Python and locked dependencies
+        run: |
+          uv python install 3.14.7
+          uv sync --all-groups --frozen
+
+      - name: Validate, build, migrate, integrate, back up, and restore
+        run: bash scripts/container-smoke.sh
+
+      - name: Verify the built Linux runtime SBOM and license evidence
+        run: |
+          cleanup_runtime_sbom() { rm -f -- .ci-runtime-sbom.json; }
+          trap cleanup_runtime_sbom EXIT
+          docker run --rm --user "$(id -u):$(id -g)" \
+            --volume "$PWD:/audit" --entrypoint python makolet:local \
+            /audit/scripts/generate_runtime_sbom.py \
+            --output /audit/.ci-runtime-sbom.json
+          uv run python scripts/check_sbom.py \
+            --runtime-semantic \
+            sbom.runtime-linux.cdx.json .ci-runtime-sbom.json

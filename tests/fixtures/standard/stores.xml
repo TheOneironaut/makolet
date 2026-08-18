@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Chain>
+    <ChainID>7290000000001</ChainID>
+    <ChainName>Demo Chain</ChainName>
+    <SubChains>
+      <SubChain>
+        <SubChainID>1</SubChainID>
+        <SubChainName>Demo Format</SubChainName>
+        <Stores>
+          <Store>
+            <StoreID>042</StoreID>
+            <StoreType>1</StoreType>
+            <StoreName>סניף מרכז</StoreName>
+            <Address>הרחוב 1</Address>
+            <City>תל אביב</City>
+            <ZipCode>61000</ZipCode>
+          </Store>
+        </Stores>
+      </SubChain>
+    </SubChains>
+  </Chain>
+</Root>

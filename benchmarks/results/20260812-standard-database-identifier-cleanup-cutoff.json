@@ -1,0 +1,79 @@
+{
+  "acceptance_evidence": false,
+  "status": "aborted_at_measured_bottleneck",
+  "profile": "standard",
+  "scenario": "database",
+  "dataset": {
+    "normalized_records_staged": 1000000,
+    "unique_products_expected": 100000,
+    "ingestion_stores": 10,
+    "reconciliation_drop_records_not_attempted": 10000,
+    "history_rows_not_attempted": 10000,
+    "query_samples_per_operation_not_attempted": 100,
+    "final_current_price_rows_not_attempted": 10000000
+  },
+  "completed_phase": {
+    "name": "initial_full_snapshot.stage",
+    "records": 1000000,
+    "duration_seconds": 82.465426,
+    "rows_per_second": 12126.29
+  },
+  "cutoff": {
+    "backend_pid": 296,
+    "captured_at_utc": "2026-08-11T23:39:03.859747+00:00",
+    "query_started_at_utc": "2026-08-11T23:28:52.179222+00:00",
+    "transaction_started_at_utc": "2026-08-11T23:28:06.708934+00:00",
+    "query_age_seconds": 611.681,
+    "transaction_age_seconds": 657.151,
+    "backend_process_elapsed": "00:12:20",
+    "backend_cpu_time": "00:10:37",
+    "backend_cpu_percent": 86.0,
+    "backend_rss_kib": 244376,
+    "backend_state": "active",
+    "backend_process_state": "Rs",
+    "wait_event_type": null,
+    "wait_event": null,
+    "database_size_at_cutoff": "627 MB"
+  },
+  "query_facts": {
+    "statement_family": "apply: remove obsolete retailer-scoped GTIN identifiers",
+    "operation": "DELETE FROM product_identifiers USING makolet_affected_gtins",
+    "predicate": "retailer_assertion identifiers without a live retailer_identifier_assertions evidence row",
+    "affected_gtin_scale": 100000,
+    "sql": "DELETE FROM product_identifiers identifier USING makolet_affected_gtins affected WHERE identifier.kind = 'gtin' AND identifier.normalized_value = affected.gtin AND identifier.issuer_retailer_id IS NOT NULL AND identifier.validation_method = 'retailer_assertion' AND NOT EXISTS (SELECT 1 FROM retailer_identifier_assertions assertion JOIN retailer_items evidence_item ON evidence_item.id = assertion.retailer_item_id WHERE assertion.kind = 'gtin' AND assertion.normalized_value = identifier.normalized_value AND assertion.superseded_at IS NULL AND evidence_item.retailer_id = identifier.issuer_retailer_id)",
+    "progress_visibility": "PostgreSQL has no pg_stat_progress view for DELETE; per-table statistics remained uncommitted inside the active transaction",
+    "explain_analyze_at_one_million": "not run because it would perturb the acceptance workload"
+  },
+  "environment": {
+    "postgresql": "PostgreSQL 18.4 (Debian 18.4-1.pgdg13+1), 64-bit",
+    "database_url": "postgresql+asyncpg://makolet:***@127.0.0.1:55434/makolet_benchmark",
+    "storage": "dedicated WSL2 ext4 filesystem on E: with approximately 956 GiB free before the run",
+    "shared_buffers": "128MB",
+    "effective_cache_size": "4GB",
+    "work_mem": "4MB"
+  },
+  "termination": {
+    "method": "pg_terminate_backend limited to PID 296 with application_name makolet-scale-benchmark",
+    "reason": "the initial apply could not complete within a useful acceptance window because one cleanup statement remained CPU-active for more than ten minutes",
+    "runner_wall_seconds_until_termination": 747.7,
+    "rollback": "connection termination rolled back the active apply transaction",
+    "schema_cleanup": "BenchmarkSandbox finally block dropped only schema makolet_benchmark"
+  },
+  "cleanup_verified_at_utc": "2026-08-11T23:39:45.9269449+00:00",
+  "cleanup": {
+    "benchmark_schema_count_after": 0,
+    "benchmark_session_count_after": 0,
+    "advisory_lock_count_after": 0,
+    "windows_benchmark_process_count_after": 0,
+    "database_size_after": "8814 kB"
+  },
+  "unmeasured": [
+    "initial apply completion",
+    "duplicate detection",
+    "full-snapshot reconciliation",
+    "10-million-current-price amplification",
+    "10,000-row target history seed",
+    "100 query samples per operation",
+    "full-scale query and apply EXPLAIN plans"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "format_version": 1,
+  "acceptance_evidence": false,
+  "scenario_acceptance_evidence": {
+    "parser": false,
+    "database": false
+  },
+  "status": "terminated_at_infrastructure_wal_stall",
+  "profile": "standard",
+  "scenario": "database",
+  "source_tree_sha256": "371b37c1caeefdbff40be5cdeb36ec643a75c3156f917b586d0251eb29b10c55",
+  "dataset": {
+    "normalized_records": 1000000,
+    "ingestion_stores": 10,
+    "expected_current_price_rows": 10000000,
+    "reconciliation_drop_records": 10000,
+    "history_rows": 10000,
+    "query_samples_per_operation": 100
+  },
+  "completed_phase": {
+    "name": "initial_full_snapshot.stage",
+    "records": 1000000,
+    "duration_seconds": 120.373811,
+    "rows_per_second": 8307.45
+  },
+  "terminal_phase": {
+    "name": "initial_full_snapshot.apply.current_prices_upsert",
+    "completed": false,
+    "transaction_committed": false,
+    "statement_family": "apply: insert or update current prices",
+    "implementation": "src/makolet/adapters/persistence/ingestion.py:_apply_staged_prices",
+    "statement_text": "INSERT INTO current_prices (id, retailer_item_id, store_id, item_price, unit_of_measure_price, allow_discount, source_updated_at, last_sale_at, audit_number, source_file_id, first_observed_at, last_observed_at) SELECT uuidv7(), retailer_item_id, store_id, item_price, unit_of_measure_price, allow_discount, price_updated_at, last_sale_at, audit_number, :source_file_id, :applied_at, :applied_at FROM pg_temp.makolet_mapped_price_incoming incoming ON CONFLICT (retailer_item_id, store_id) DO UPDATE SET item_price = excluded.item_price, unit_of_measure_price = excluded.unit_of_measure_price, allow_discount = excluded.allow_discount, source_updated_at = excluded.source_updated_at, last_sale_at = excluded.last_sale_at, audit_number = excluded.audit_number, source_file_id = excluded.source_file_id, last_observed_at = excluded.last_observed_at"
+  },
+  "cutoff": {
+    "sampled_at": "2026-08-12T17:26:21.198870+03:00",
+    "backend_pid": 496,
+    "backend_state": "active",
+    "wait_event_type": "LWLock",
+    "wait_event": "WALWrite",
+    "query_age_seconds": 9090.892,
+    "blocking_backend_pids": [],
+    "checkpointer": {
+      "pid": 102,
+      "wait_event_type": "LWLock",
+      "wait_event": "WALWrite"
+    },
+    "background_writer": {
+      "pid": 103,
+      "wait_event_type": "LWLock",
+      "wait_event": "WALInsert"
+    },
+    "archive_mode": "off",
+    "objective_forward_progress_measured": false
+  },
+  "bounded_progress_sample": {
+    "duration_seconds": 15,
+    "database_size_bytes_before": 1836644031,
+    "database_size_bytes_after": 1836644031,
+    "database_size_delta_bytes": 0,
+    "host_volume": "E:",
+    "host_volume_free_bytes_before": 1633135362048,
+    "host_volume_free_bytes_after": 1633135362048,
+    "host_volume_free_delta_bytes": 0,
+    "physical_disk_samples": 16,
+    "physical_disk_read_bytes_per_second_min": 0,
+    "physical_disk_read_bytes_per_second_max": 0,
+    "physical_disk_read_bytes_per_second_mean": 0,
+    "physical_disk_write_bytes_per_second_min": 0,
+    "physical_disk_write_bytes_per_second_max": 0,
+    "physical_disk_write_bytes_per_second_mean": 0,
+    "physical_disk_queue_length_min": 0,
+    "physical_disk_queue_length_max": 0,
+    "physical_disk_percent_time_min": 0,
+    "physical_disk_percent_time_max": 0,
+    "wsl_vhd_path": "E:\\MakoletBenchmarkWSL\\ext4.vhdx",
+    "wsl_vhd_size_bytes_before": 5426380800,
+    "wsl_vhd_size_bytes_after": 5426380800,
+    "wsl_vhd_size_delta_bytes": 0,
+    "wsl_vhd_last_write_utc_before": "2026-08-12T11:56:08Z",
+    "wsl_vhd_last_write_utc_after": "2026-08-12T11:56:08Z",
+    "wsl_filesystem_used_bytes": 3408556032,
+    "wsl_filesystem_available_bytes": 1022700265472,
+    "vmmem_wsl_cpu_seconds_delta": 20.453125,
+    "wal_lsn_delta": null,
+    "wal_lsn_probe": "pg_current_wal_insert_lsn, pg_current_wal_write_lsn, and pg_current_wal_flush_lsn did not return within 5 seconds",
+    "pg_stat_wal_probe": "did not return within 3 seconds",
+    "backend_proc_io_probe": "did not return within 14 seconds",
+    "schema_size_probe": "did not return within its hard bound"
+  },
+  "termination": {
+    "reason": "infrastructure_wal_subsystem_stall",
+    "classification": "The backend, checkpointer, and background writer were simultaneously stuck on WAL locks while bounded database, VHD, and physical-disk samples showed no storage progress. This is infrastructure-stall evidence, not a completed application throughput measurement.",
+    "root_cause_established": false,
+    "root_cause_limit": "PostgreSQL logs could not be read because the isolated WSL distro and then the WSL control plane did not recover after termination.",
+    "pg_terminate_backend": "targeted only backend PID 496 but did not return",
+    "benchmark_processes": "targeted only the two verified standard database runner processes; runner count reached zero",
+    "isolated_distro": "normal termination and direct backend TERM did not return; the exact MakoletBenchmark distro host was forcibly stopped after its registry GUID and E:\\MakoletBenchmarkWSL path were revalidated",
+    "runner_wall_seconds_until_exit": 10299.7
+  },
+  "cleanup": {
+    "benchmark_runner_count_after": 0,
+    "benchmark_session_count_after": null,
+    "advisory_lock_count_after": null,
+    "benchmark_schema_count_after": null,
+    "database_size_after": null,
+    "credential_rotated_after": false,
+    "isolated_distro_specific_host_count_after": 0,
+    "postgresql_log_inspection_completed": false,
+    "status": "externally_blocked_pending_administrator_recovery_or_host_reboot",
+    "details": "Two bounded wsl --shutdown calls and the one authorized final wsl --list --verbose recovery check timed out. WSLService could not be restarted without elevation. PostgreSQL crash recovery, log inspection, schema/session/lock verification, baseline-size verification, and credential rotation therefore remain unverified. WSLService and vmcompute were not terminated."
+  },
+  "broader_recovery_side_effects": {
+    "docker_desktop": "stopped during safeguarded WSL recovery and not restarted because further WSL/Docker actions were explicitly halted",
+    "unrelated_ubuntu_distro": "inactive before recovery and never started",
+    "data_or_schema_mutation_outside_benchmark_database": false
+  },
+  "acceptance_note": "The exact one-million-normalized / ten-million-current standard database scenario did not complete. Database acceptance is false, the enforced plan gate was not reached, and no performance baseline or regression limit may be derived from this cutoff.",
+  "unmeasured": [
+    "initial full-snapshot apply completion",
+    "immutable archive/CAS duplicate detection",
+    "validated staging reuse",
+    "full-snapshot reconciliation",
+    "ten-million current-price amplification",
+    "history seed",
+    "query latency samples",
+    "standard apply and query plan gate"
+  ],
+  "recorded_at_utc": "2026-08-12T14:53:13.5257427Z"
+}

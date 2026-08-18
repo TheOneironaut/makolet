@@ -1,0 +1,64 @@
+{
+  "acceptance_evidence": false,
+  "acceptance_note": "smoke/quick profile is diagnostic only and cannot satisfy scale acceptance",
+  "environment": {
+    "available_memory_at_start_bytes": 1880973312,
+    "cpu_max_mhz": 2500.0,
+    "filesystem_free_at_start_bytes": 18920484864,
+    "filesystem_total_bytes": 999243640832,
+    "logical_cpu_cores": 12,
+    "machine": "AMD64",
+    "os": "Windows",
+    "os_release": "11",
+    "physical_cpu_cores": 6,
+    "physical_memory_bytes": 17032929280,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "process_id": 28364,
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.14.7 (main, Aug  7 2026, 02:26:22) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython"
+  },
+  "finished_at": "2026-08-12T06:12:52.230813+00:00",
+  "format_version": 1,
+  "git_revision": null,
+  "parser": {
+    "baseline_process_rss_bytes": 113352704,
+    "chunk_size_bytes": 65536,
+    "chunks": 89,
+    "duration_seconds": 2.9594,
+    "memory_scope": "benchmark Python process RSS; PostgreSQL is not involved",
+    "metadata_records": 1,
+    "peak_process_rss_bytes": 120774656,
+    "peak_process_rss_delta_bytes": 7421952,
+    "peak_process_rss_delta_mib": 7.078,
+    "peak_process_rss_mib": 115.18,
+    "records": 10000,
+    "rejected_records": 0,
+    "rows_per_second": 3379.06,
+    "scenario": "streaming_price_full_parser",
+    "throughput_mib_per_second": 1.859,
+    "xml_bytes": 5768082,
+    "xml_mib": 5.501
+  },
+  "profile": "quick",
+  "profile_inputs": {
+    "database": {
+      "history_rows": 1000,
+      "ingestion_store_count": 10,
+      "normalized_records": 10000,
+      "query_repetitions": 20,
+      "query_warmups": 3,
+      "reconciliation_drop_records": 100,
+      "store_count": 100
+    },
+    "parser_records": 10000
+  },
+  "scenario": "parser",
+  "scenario_acceptance_evidence": {
+    "database": false,
+    "parser": false
+  },
+  "source_tree_sha256": "8581a8274d2e1593acf8f86cef7af8838591c979dc34a8ef9a887e575c3288ef",
+  "started_at": "2026-08-12T06:12:49.165638+00:00",
+  "wall_duration_seconds": 3.064609
+}

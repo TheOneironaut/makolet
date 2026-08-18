@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <ChainID>7290000000001</ChainID>
+  <SubChainID>1</SubChainID>
+  <StoreID>042</StoreID>
+  <BikoretNo>100</BikoretNo>
+  <Items>
+    <Item>
+      <ItemCode>4006381333931</ItemCode>
+      <ItemType>1</ItemType>
+      <ItemName>Clean Room Espresso</ItemName>
+      <ManufacturerName>Fixture Coffee Cooperative</ManufacturerName>
+      <ManufacturerCountry>IL</ManufacturerCountry>
+      <UnitQty>10 capsules</UnitQty>
+      <Quantity>10</Quantity>
+      <UnitOfMeasure>capsule</UnitOfMeasure>
+      <QtyInPackage>10</QtyInPackage>
+      <ItemPrice>19.90</ItemPrice>
+      <UnitOfMeasurePrice>1.99</UnitOfMeasurePrice>
+      <AllowDiscount>1</AllowDiscount>
+      <ItemStatus>1</ItemStatus>
+      <PriceUpdateDate>2026-08-10</PriceUpdateDate>
+      <PriceUpdateTime>12:30:00</PriceUpdateTime>
+    </Item>
+  </Items>
+</Root>

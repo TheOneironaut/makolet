@@ -1,0 +1,98 @@
+{
+  "acceptance_evidence": false,
+  "status": "aborted_at_measured_bottleneck",
+  "profile": "gtin-cleanup-diagnostic",
+  "scenario": "database",
+  "source_tree_sha256": "e4b421d69deefda484d40bd3477e8af5ba393506d20bf6698deccaf6fb88ca4e",
+  "dataset": {
+    "normalized_records_staged": 100000,
+    "unique_products_expected": 100000,
+    "ingestion_stores": 1,
+    "final_current_price_rows_not_attempted": 100000,
+    "reconciliation_drop_records_not_attempted": 1000,
+    "history_rows_not_attempted": 100,
+    "query_samples_per_operation_not_attempted": 3
+  },
+  "completed_phase": {
+    "name": "initial_full_snapshot.stage",
+    "records": 100000,
+    "duration_seconds": 5.507595,
+    "rows_per_second": 18156.74
+  },
+  "cutoff": {
+    "backend_pid": 68,
+    "captured_at_utc": "2026-08-12T09:37:27.061786+00:00",
+    "query_started_at_utc": "2026-08-12T09:24:03.455975+00:00",
+    "transaction_started_at_utc": "2026-08-12T09:22:46.561229+00:00",
+    "query_age_seconds": 803.606,
+    "transaction_age_seconds": 880.501,
+    "backend_process_elapsed_seconds": 888,
+    "backend_cpu_time_seconds": 832,
+    "backend_cpu_percent": 93.7,
+    "backend_rss_kib": 248788,
+    "backend_state": "active",
+    "backend_process_state": "Rs",
+    "wait_event_type": null,
+    "wait_event": null,
+    "database_size_bytes": 521270975,
+    "schema_relation_bytes": 441114624,
+    "advisory_locks": 2
+  },
+  "query_facts": {
+    "statement_family": "apply: insert availability history",
+    "operation": "INSERT INTO availability_history from mapped staged-price input",
+    "implementation": "src/makolet/adapters/persistence/ingestion.py:_apply_incoming_availability",
+    "active_call_line_at_measurement": 3557,
+    "confirmed_by": "the benchmark exception retained the complete parameter-redacted SQL after the targeted backend termination",
+    "stats_at_cutoff": {
+      "staged_prices": {
+        "n_live_tup": 100000,
+        "last_analyze": "2026-08-12T09:22:46.392118+00:00"
+      },
+      "retailer_items": {
+        "n_live_tup": 0,
+        "reltuples": -1,
+        "last_analyze": null
+      },
+      "stores": {
+        "n_live_tup": 0,
+        "reltuples": -1,
+        "last_analyze": null
+      }
+    },
+    "interpretation": "The fresh-schema transaction had usable staged-price statistics but no planner statistics for the permanent retailer-item and store rows inserted earlier in the same transaction. The repeatedly expanded mapped-input join was CPU-bound; the standard 1,000,000-row profile was not started pending materialization and analysis of that projection."
+  },
+  "environment": {
+    "postgresql": "PostgreSQL 18.4 (Debian 18.4-1.pgdg13+1), 64-bit",
+    "database_url": "postgresql+asyncpg://makolet:***@127.0.0.1:55434/makolet_benchmark",
+    "storage": "dedicated MakoletBenchmark WSL2 ext4 filesystem on E: with 955 GiB free before the run",
+    "shared_buffers": "128MB",
+    "effective_cache_size": "4GB",
+    "work_mem": "4MB"
+  },
+  "termination": {
+    "method": "pg_terminate_backend limited to PID 68 with application_name makolet-scale-benchmark in database makolet_benchmark",
+    "reason": "the first availability-history insert remained CPU-active for more than 13 minutes at 100,000 unique mapped records",
+    "runner_wall_seconds_until_termination": 894.7,
+    "rollback": "connection termination rolled back the active initial-apply transaction",
+    "schema_cleanup": "BenchmarkSandbox finally block dropped only schema makolet_benchmark"
+  },
+  "cleanup_verified_at_utc": "2026-08-12T09:37:32+00:00",
+  "cleanup": {
+    "benchmark_schema_count_after": 0,
+    "benchmark_session_count_after": 0,
+    "advisory_lock_count_after": 0,
+    "windows_benchmark_process_count_after": 0,
+    "database_size_after": "8846 kB",
+    "credential_rotated_after": true
+  },
+  "unmeasured": [
+    "initial apply completion",
+    "duplicate detection",
+    "full-snapshot reconciliation",
+    "current-price amplification",
+    "target history seed",
+    "query latency samples",
+    "full-scale query and apply EXPLAIN plans"
+  ]
+}

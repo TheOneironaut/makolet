@@ -1,0 +1,99 @@
+name: live-source-smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Public HTTPS retailer source to probe once (listing only)
+        required: true
+        type: choice
+        default: shufersal
+        options:
+          - shufersal
+          - king-store
+          - maayan-2000
+          - global-retail
+          - hyper-cohen
+          - hazi-hinam
+          - city-market
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-source-smoke-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  UV_VERSION: 0.12.3
+  UV_PYTHON: 3.14.7
+  UV_FROZEN: "1"
+
+jobs:
+  manual-source:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      MAKOLET_LIVE_SOURCE: ${{ inputs.source }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, MIT
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7, MIT/Apache-2.0
+        with:
+          version: "0.12.3"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install locked test environment
+        run: |
+          uv python install 3.14.7
+          uv sync --group dev --frozen
+
+      - name: Run one bounded read-only discovery
+        run: |
+          test -n "$MAKOLET_LIVE_SOURCE"
+          uv run pytest --no-cov -m live tests/unit/sources/test_live_sources.py -vv
+
+  scheduled-sources:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        source:
+          - shufersal
+          - king-store
+          - maayan-2000
+          - global-retail
+          - hyper-cohen
+          - hazi-hinam
+          - city-market
+    env:
+      MAKOLET_LIVE_SOURCE: ${{ matrix.source }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, MIT
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7, MIT/Apache-2.0
+        with:
+          version: "0.12.3"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install locked test environment
+        run: |
+          uv python install 3.14.7
+          uv sync --group dev --frozen
+
+      - name: Run one bounded read-only discovery
+        run: |
+          test -n "$MAKOLET_LIVE_SOURCE"
+          uv run pytest --no-cov -m live tests/unit/sources/test_live_sources.py -vv

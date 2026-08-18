@@ -1,0 +1,62 @@
+{
+  "acceptance_evidence": false,
+  "status": "aborted_at_known_bottleneck",
+  "profile": "standard",
+  "scenario": "database",
+  "dataset": {
+    "normalized_records_staged": 1000000,
+    "unique_products_and_retailer_items_expected": 100000,
+    "ingestion_stores": 10,
+    "final_current_price_rows_not_attempted": 10000000
+  },
+  "cutoff": {
+    "backend_pid": 863,
+    "captured_at_utc": "2026-08-11T20:39:41.989406+00:00",
+    "query_started_at_utc": "2026-08-11T20:28:07.004378+00:00",
+    "transaction_started_at_utc": "2026-08-11T20:27:49.781101+00:00",
+    "query_age_seconds": 694.985028,
+    "transaction_age_seconds": 712.208306,
+    "backend_state": "active",
+    "wait_event_type": null,
+    "wait_event": null,
+    "postgres_container_cpu_percent": 99.64,
+    "postgres_container_memory_mib": 537.3,
+    "postgres_container_memory_limit_gib": 7.689,
+    "advisory_lock_count": 2
+  },
+  "query_facts": {
+    "statement_family": "apply: confirm exact GTIN matches",
+    "incoming_shape": "_PRICE_INCOMING preserves subchain, store, and source-item multiplicity",
+    "mutation": "INSERT INTO confirmed_product_matches ... ON CONFLICT (retailer_item_id) DO NOTHING",
+    "joins": [
+      "retailer_items by retailer_id and source_item_code",
+      "global product_identifiers by GTIN"
+    ],
+    "observed_candidate_scale": 1000000,
+    "result_key_scale": 100000,
+    "explain_analyze_at_one_million": "not run after the explicit cutoff"
+  },
+  "supporting_quick_trace": {
+    "artifact": "quick-grid.json",
+    "normalized_records": 10000,
+    "unique_products": 1000,
+    "statement_family_calls": 2,
+    "statement_family_total_seconds": 18.699647,
+    "statement_family_maximum_seconds": 11.048009,
+    "scope_note": "supporting diagnostic only; not extrapolated into a standard-profile result"
+  },
+  "cleanup": {
+    "backend_terminated_at_utc": "2026-08-11T20:40:15.815302+00:00",
+    "rollback_and_schema_drop_seconds": 1.435,
+    "benchmark_schema_count_after": 0,
+    "benchmark_session_count_after": 0,
+    "advisory_lock_count_after": 0
+  },
+  "unmeasured": [
+    "initial apply completion",
+    "duplicate detection",
+    "full-snapshot reconciliation",
+    "10-million-current-price amplification",
+    "query latency and full-scale EXPLAIN plans"
+  ]
+}

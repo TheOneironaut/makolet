@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <ChainID>7290000000001</ChainID>
+  <SubChainID>1</SubChainID>
+  <StoreID>042</StoreID>
+  <Promotions>
+    <Promotion>
+      <PromotionID>P-100</PromotionID>
+      <PromotionDescription>2 ב-30</PromotionDescription>
+      <PromotionStartDate>2026-08-01</PromotionStartDate>
+      <PromotionEndDate>2026-08-31</PromotionEndDate>
+      <MinQty>2</MinQty>
+      <DiscountedPrice>30.00</DiscountedPrice>
+      <PromotionItems>
+        <Item><ItemCode>4006381333931</ItemCode><ItemType>1</ItemType></Item>
+        <Item><ItemCode>96385074</ItemCode><ItemType>1</ItemType></Item>
+      </PromotionItems>
+      <PromotionStores><Store><StoreID>042</StoreID></Store></PromotionStores>
+      <Clubs><Club><ClubID>MEMBERS</ClubID></Club></Clubs>
+      <AdditionalRestrictions>לחברי מועדון</AdditionalRestrictions>
+    </Promotion>
+  </Promotions>
+</Root>

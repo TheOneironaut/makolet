@@ -1,0 +1,225 @@
+schema_version = 1
+notices_document = "THIRD_PARTY_NOTICES.md"
+audit_document = "docs/research/dependency-license-audit.md"
+
+[base_image_exception]
+classification = "separately-licensed-base-image-components"
+image = "python:3.14.7-slim-bookworm@sha256:23c59390fc717bf09f9336908199a0ae75d9c4264bf296123f94ad772fea3b52"
+runtime_sbom = "sbom.runtime-linux.cdx.json"
+obligations = [
+  "runtime-sbom",
+  "preserve-debian-copyright",
+  "corresponding-source",
+]
+
+[[group]]
+license_expression = "Apache-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "asyncpg==0.31.0",
+  "cachecontrol==0.14.4",
+  "msgpack==1.2.1",
+  "pip-api==0.0.34",
+  "pip-audit==2.10.1",
+  "py-serializable==2.1.0",
+  "pytest-asyncio==1.4.0",
+  "sortedcontainers==2.4.0",
+  "tenacity==9.1.4",
+  "trove-classifiers==2026.6.1.19",
+]
+
+[[group]]
+license_expression = "Apache-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-packaged-license-set"]
+packages = ["tzdata==2026.3"]
+
+[[group]]
+license_expression = "Apache-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-notice"]
+packages = [
+  "boto3==1.43.68",
+  "botocore==1.43.68",
+  "coverage==7.15.4",
+  "cyclonedx-python-lib==11.11.1",
+  "license-expression==30.4.4",
+  "requests==2.34.2",
+  "s3transfer==0.19.2",
+]
+
+[[group]]
+license_expression = "Apache-2.0 AND BSD-2-Clause"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-notice"]
+packages = ["prometheus-client==0.26.0"]
+
+[[group]]
+license_expression = "Apache-2.0 OR BSD-2-Clause"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = ["packaging==26.3"]
+
+[[group]]
+license_expression = "BSD-3-Clause AND (Apache-2.0 OR BSD-3-Clause)"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = ["python-dateutil==2.9.0.post0"]
+
+[[group]]
+license_expression = "BSD-2-Clause"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "boolean-py==5.0",
+  "pygments==2.20.0",
+]
+
+[[group]]
+license_expression = "BSD-3-Clause"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "click==8.4.2",
+  "colorama==0.4.6",
+  "httpcore==1.0.9",
+  "httpx==0.28.1",
+  "idna==3.18",
+  "markupsafe==3.0.3",
+  "prettytable==3.18.0",
+  "psutil==7.2.2",
+  "python-dotenv==1.2.2",
+  "respx==0.23.1",
+  "starlette==1.6.0",
+  "uvicorn==0.52.1",
+]
+
+[[group]]
+license_expression = "ISC"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = ["shellingham==1.5.4"]
+
+[[group]]
+license_expression = "MIT"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "alembic==1.19.1",
+  "annotated-doc==0.0.5",
+  "annotated-types==0.8.0",
+  "anyio==4.14.2",
+  "botocore-stubs==1.43.67",
+  "charset-normalizer==3.4.9",
+  "fastapi==0.141.1",
+  "filelock==3.32.2",
+  "h11==0.16.0",
+  "hatchling==1.32.0",
+  "iniconfig==2.3.0",
+  "jmespath==1.1.0",
+  "mako==1.4.1",
+  "markdown-it-py==4.2.0",
+  "mdurl==0.1.2",
+  "mypy-extensions==1.1.0",
+  "packageurl-python==0.17.6",
+  "pip-licenses==5.5.5",
+  "pip-requirements-parser==32.0.1",
+  "platformdirs==4.11.2",
+  "pluggy==1.6.0",
+  "pydantic==2.13.4",
+  "pydantic-core==2.46.4",
+  "pydantic-settings==2.15.0",
+  "pyparsing==3.3.2",
+  "pytest==9.1.1",
+  "pytest-cov==7.1.0",
+  "rich==15.0.0",
+  "six==1.17.0",
+  "sqlalchemy==2.0.51",
+  "tomli==2.4.1",
+  "tomli-w==1.2.0",
+  "tomlkit==0.15.1",
+  "typer==0.27.1",
+  "types-boto3==1.43.68",
+  "types-boto3-s3==1.43.66",
+  "types-s3transfer==0.16.0",
+  "typing-inspection==0.4.3",
+  "urllib3==2.7.0",
+  "wcwidth==0.8.2",
+]
+
+[[group]]
+license_expression = "MIT"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-embedded-license-bundle"]
+packages = ["ast-serialize==0.8.0"]
+
+[[group]]
+license_expression = "MIT"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-vendored-license-tree"]
+packages = [
+  "pip==26.2.1",
+]
+
+[[group]]
+license_expression = "MIT AND PSF-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "greenlet==3.5.5",
+  "librt==0.15.0",
+]
+
+[[group]]
+license_expression = "MIT AND PSF-2.0 AND Apache-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = ["mypy==2.3.0"]
+
+[[group]]
+license_expression = "MIT OR Apache-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files", "preserve-notice"]
+packages = ["structlog==26.1.0"]
+
+[[group]]
+license_expression = "MIT"
+classification = "external-tooling-only"
+obligations = ["do-not-redistribute"]
+packages = ["ruff==0.16.2"]
+
+[[group]]
+license_expression = "MPL-2.0"
+classification = "unmodified-mpl-2.0-artifact"
+obligations = [
+  "preserve-license-files",
+  "mpl-license-text",
+  "source-availability",
+  "mpl-covered-file-modifications",
+]
+source_url = "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz"
+source_sha256 = "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+packages = ["certifi==2026.7.22"]
+
+[[group]]
+license_expression = "MPL-2.0"
+classification = "unmodified-mpl-2.0-artifact"
+obligations = [
+  "preserve-license-files",
+  "mpl-license-text",
+  "source-availability",
+  "mpl-covered-file-modifications",
+]
+source_url = "https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz"
+source_sha256 = "17db5ecd524104a120e173814c90367a96a98d07c45b2e10c2f3919fff91bf5a"
+packages = ["pathspec==1.1.1"]
+
+[[group]]
+license_expression = "PSF-2.0"
+classification = "compatible"
+obligations = ["preserve-license-files"]
+packages = [
+  "defusedxml==0.7.1",
+  "typing-extensions==4.16.0",
+]

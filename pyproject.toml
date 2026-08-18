@@ -1,0 +1,210 @@
+[build-system]
+requires = ["hatchling==1.32.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "makolet"
+version = "0.1.0"
+description = "Self-hosted Israeli supermarket price-transparency data platform"
+readme = "README.md"
+requires-python = ">=3.14.7,<3.15"
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+keywords = ["israel", "supermarket", "price-transparency", "open-data", "mcp"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Framework :: FastAPI",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Database",
+]
+dependencies = [
+  "alembic==1.19.1",
+  "anyio==4.14.2",
+  "asyncpg==0.31.0",
+  "boto3==1.43.68",
+  "fastapi==0.141.1",
+  "httpx==0.28.1",
+  "prometheus-client==0.26.0",
+  "pydantic==2.13.4",
+  "pydantic-settings==2.15.0",
+  "rich==15.0.0",
+  "sqlalchemy[asyncio]==2.0.51",
+  "structlog==26.1.0",
+  "tenacity==9.1.4",
+  "typer==0.27.1",
+  "tzdata==2026.3",
+  "uvicorn==0.52.1",
+]
+
+[project.optional-dependencies]
+benchmark = ["psutil==7.2.2"]
+
+[project.scripts]
+makolet = "makolet.interfaces.cli:main"
+
+[dependency-groups]
+dev = [
+  "mypy==2.3.0",
+  "psutil==7.2.2",
+  "pytest==9.1.1",
+  "pytest-asyncio==1.4.0",
+  "pytest-cov==7.1.0",
+  "respx==0.23.1",
+  "ruff==0.16.2",
+  "types-boto3[s3]==1.43.68",
+]
+security = [
+  "pip-audit==2.10.1",
+  "pip-licenses==5.5.5",
+]
+
+[tool.uv]
+build-constraint-dependencies = [
+  "hatchling==1.32.0",
+  "packaging==26.3",
+  "pathspec==1.1.1",
+  "pluggy==1.6.0",
+  "tomlkit==0.15.1",
+  "trove-classifiers==2026.6.1.19",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/makolet", "benchmarks"]
+exclude = [
+  "benchmarks/__pycache__/**",
+  "benchmarks/results/**",
+  "src/makolet/**/AGENTS.md",
+  "migrations/AGENTS.md",
+]
+
+[tool.hatch.build.targets.wheel.force-include]
+"migrations/env.py" = "makolet/_migrations/env.py"
+"migrations/script.py.mako" = "makolet/_migrations/script.py.mako"
+"migrations/versions" = "makolet/_migrations/versions"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/.dockerignore",
+  "/.editorconfig",
+  "/.env.example",
+  "/.gitattributes",
+  "/.gitignore",
+  "/.python-version",
+  "/CHANGELOG.md",
+  "/CONTRIBUTING.md",
+  "/Dockerfile",
+  "/LICENSE",
+  "/README.md",
+  "/SECURITY.md",
+  "/THIRD_PARTY_NOTICES.md",
+  "/alembic.ini",
+  "/benchmarks",
+  "/build-constraints.txt",
+  "/compose.yaml",
+  "/deployment",
+  "/docs",
+  "/migrations",
+  "/pyproject.toml",
+  "/sbom.build.cdx.json",
+  "/sbom.cdx.json",
+  "/sbom.runtime-linux.cdx.json",
+  "/scripts",
+  "/src",
+  "/tests",
+  "/uv.lock",
+]
+exclude = [
+  "/benchmarks/results/**",
+  "/**/AGENTS.md",
+  "/**/__pycache__/**",
+]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+extend-exclude = ["data", "exports", "raw-archive"]
+
+[tool.ruff.lint]
+select = [
+  "ASYNC",
+  "B",
+  "C4",
+  "DTZ",
+  "E",
+  "F",
+  "I",
+  "LOG",
+  "N",
+  "PERF",
+  "PIE",
+  "PTH",
+  "PT",
+  "RET",
+  "RUF",
+  "S",
+  "SIM",
+  "T20",
+  "TRY",
+  "UP",
+]
+ignore = [
+  "TRY003", # Domain-specific errors benefit from precise messages at the raise site.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "S105", "S106", "T20"]
+"benchmarks/**/*.py" = ["T20"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["makolet"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_unreachable = true
+show_error_codes = true
+pretty = true
+plugins = ["pydantic.mypy"]
+exclude = ["migrations/versions/"]
+
+[[tool.mypy.overrides]]
+module = ["boto3.*", "botocore.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+addopts = [
+  "-ra",
+  "--strict-config",
+  "--strict-markers",
+]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+  "integration: requires local open-source services",
+  "e2e: exercises an end-to-end user workflow",
+  "live: performs a low-volume request to an external retailer source",
+  "benchmark: measured performance scenario excluded from normal tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["makolet"]
+parallel = true
+omit = [
+  "src/makolet/application/ports.py",
+]
+
+[tool.coverage.report]
+fail_under = 85
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "raise NotImplementedError",
+]
+show_missing = true

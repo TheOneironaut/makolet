@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <ChainID>7290000000001</ChainID>
+  <SubChainID>1</SubChainID>
+  <Promotions>
+    <Promotion>
+      <PromotionID>P-BAD-ITEM</PromotionID>
+      <PromotionItems>
+        <Item><ItemCode>1001</ItemCode></Item>
+        <Item><ItemType>1</ItemType></Item>
+      </PromotionItems>
+      <PromotionStores><Store><StoreID>042</StoreID></Store></PromotionStores>
+      <Clubs><Club><ClubID>MEMBERS</ClubID></Club></Clubs>
+    </Promotion>
+  </Promotions>
+</Root>

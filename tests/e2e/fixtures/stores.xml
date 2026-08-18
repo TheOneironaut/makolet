@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Chain>
+    <ChainID>7290000000001</ChainID>
+    <ChainName>Clean Room Market</ChainName>
+    <SubChains>
+      <SubChain>
+        <SubChainID>1</SubChainID>
+        <SubChainName>Test Format</SubChainName>
+        <Stores>
+          <Store>
+            <StoreID>042</StoreID>
+            <StoreType>1</StoreType>
+            <StoreName>Central Test Store</StoreName>
+            <Address>1 Fixture Street</Address>
+            <City>Tel Aviv</City>
+            <ZipCode>61000</ZipCode>
+          </Store>
+        </Stores>
+      </SubChain>
+    </SubChains>
+  </Chain>
+</Root>

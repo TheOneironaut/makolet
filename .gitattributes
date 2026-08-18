@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.gz binary
+*.zip binary
+*.parquet binary
+benchmarks/results/*.json -text whitespace=-trailing-space,-blank-at-eol,-blank-at-eof,-cr-at-eol
+migrations/versions/0001_initial.py whitespace=-blank-at-eol
+migrations/AGENTS.md whitespace=-blank-at-eof
+src/makolet/adapters/sources/AGENTS.md whitespace=-blank-at-eof

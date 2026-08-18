@@ -1,0 +1,313 @@
+x-app-environment: &app-environment
+  MAKOLET_ENVIRONMENT: ${MAKOLET_ENVIRONMENT:-development}
+  MAKOLET_DATABASE_URL: ${MAKOLET_DATABASE_URL:?MAKOLET_DATABASE_URL must be set}
+  MAKOLET_DATABASE_ALLOW_INSECURE_LOCAL: ${MAKOLET_DATABASE_ALLOW_INSECURE_LOCAL:-true}
+  MAKOLET_ARCHIVE_ROOT: /var/lib/makolet/raw
+  MAKOLET_ARCHIVE_MAXIMUM_OBJECT_BYTES: ${MAKOLET_ARCHIVE_MAXIMUM_OBJECT_BYTES:-2147483648}
+  MAKOLET_ARCHIVE_MINIMUM_FREE_BYTES: ${MAKOLET_ARCHIVE_MINIMUM_FREE_BYTES:-1073741824}
+  MAKOLET_EXPORT_ROOT: /var/lib/makolet/exports
+  MAKOLET_ARCHIVE_BACKEND: s3
+  MAKOLET_S3_ENDPOINT: ${MAKOLET_S3_ENDPOINT:-http://seaweedfs:8333}
+  MAKOLET_S3_ALLOW_INSECURE_LOCAL: ${MAKOLET_S3_ALLOW_INSECURE_LOCAL:?MAKOLET_S3_ALLOW_INSECURE_LOCAL must be set}
+  MAKOLET_S3_BUCKET: ${MAKOLET_S3_BUCKET:-makolet-raw}
+  MAKOLET_S3_REGION: ${MAKOLET_S3_REGION:-us-east-1}
+  MAKOLET_S3_ACCESS_KEY: ${MAKOLET_S3_ACCESS_KEY:?MAKOLET_S3_ACCESS_KEY must be set}
+  MAKOLET_S3_SECRET_KEY: ${MAKOLET_S3_SECRET_KEY:?MAKOLET_S3_SECRET_KEY must be set}
+  MAKOLET_S3_KEY_PREFIX: ${MAKOLET_S3_KEY_PREFIX:-raw}
+  MAKOLET_S3_PATH_STYLE: ${MAKOLET_S3_PATH_STYLE:-true}
+  AWS_ACCESS_KEY_ID: ${MAKOLET_S3_ACCESS_KEY:?MAKOLET_S3_ACCESS_KEY must be set}
+  AWS_SECRET_ACCESS_KEY: ${MAKOLET_S3_SECRET_KEY:?MAKOLET_S3_SECRET_KEY must be set}
+  AWS_DEFAULT_REGION: ${MAKOLET_S3_REGION:-us-east-1}
+  MAKOLET_ENABLED_SOURCES: ${MAKOLET_ENABLED_SOURCES:-["shufersal"]}
+  MAKOLET_SOURCE_INTERVALS_SECONDS: ${MAKOLET_SOURCE_INTERVALS_SECONDS:-{"shufersal":21600}}
+  MAKOLET_ALLOW_INSECURE_FTP: ${MAKOLET_ALLOW_INSECURE_FTP:-false}
+  MAKOLET_INGESTION_DISCOVERY_PAGE_SIZE: ${MAKOLET_INGESTION_DISCOVERY_PAGE_SIZE:-25}
+  MAKOLET_INGESTION_MAXIMUM_FILES_PER_SOURCE_RUN: ${MAKOLET_INGESTION_MAXIMUM_FILES_PER_SOURCE_RUN:-100}
+  MAKOLET_INGESTION_MAXIMUM_CHARGED_BYTES_PER_SOURCE_RUN: ${MAKOLET_INGESTION_MAXIMUM_CHARGED_BYTES_PER_SOURCE_RUN:-4294967296}
+  MAKOLET_INGESTION_MAXIMUM_CHARGED_BYTES_PER_SOURCE_DAY: ${MAKOLET_INGESTION_MAXIMUM_CHARGED_BYTES_PER_SOURCE_DAY:-8589934592}
+  MAKOLET_WORKER_CONCURRENCY: ${MAKOLET_WORKER_CONCURRENCY:-2}
+  MAKOLET_WORKER_QUEUE_CAPACITY: ${MAKOLET_WORKER_QUEUE_CAPACITY:-16}
+  MAKOLET_WORKER_SHUTDOWN_GRACE_SECONDS: ${MAKOLET_WORKER_SHUTDOWN_GRACE_SECONDS:-45}
+  MAKOLET_WORKER_METRICS_HOST: ${MAKOLET_WORKER_METRICS_HOST:-0.0.0.0}
+  MAKOLET_WORKER_METRICS_PORT: ${MAKOLET_WORKER_METRICS_PORT:-9100}
+  MAKOLET_LOG_LEVEL: ${MAKOLET_LOG_LEVEL:-INFO}
+
+x-app-service: &app-service
+  image: makolet:local
+  pull_policy: build
+  build:
+    context: .
+    dockerfile: Dockerfile
+  environment: *app-environment
+  init: true
+  read_only: true
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=64m,mode=1777
+  volumes:
+    - raw_archive_data:/var/lib/makolet/raw
+    - export_data:/var/lib/makolet/exports
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  pids_limit: 256
+  stop_signal: SIGTERM
+  stop_grace_period: 45s
+  networks:
+    - backend
+    - outbound
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: "3"
+
+services:
+  postgres:
+    image: postgres:18.4-bookworm@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-makolet}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set}
+      POSTGRES_DB: ${POSTGRES_DB:-makolet}
+      POSTGRES_INITDB_ARGS: --data-checksums --encoding=UTF8 --locale=C.UTF-8
+      PGDATA: /var/lib/postgresql/18/docker
+    command:
+      - postgres
+      - -c
+      - max_connections=100
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - log_min_duration_statement=1000
+      - -c
+      - password_encryption=scram-sha-256
+    ports:
+      - "127.0.0.1:${MAKOLET_POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    shm_size: 256mb
+    mem_limit: 1g
+    cpus: 2.0
+    pids_limit: 256
+    stop_grace_period: 60s
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - backend
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+  seaweedfs-init:
+    image: chrislusf/seaweedfs:4.40@sha256:52194fba4fecd0083c842158b3a902ba6e04a63619b2b0efcd08007bdb6a4602
+    user: "0:0"
+    entrypoint: ["/bin/sh", "-eu", "-c"]
+    command: ["chown -R 10001:10001 /data"]
+    read_only: true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - seaweedfs_data:/data
+    networks:
+      - backend
+    restart: "no"
+
+  seaweedfs:
+    image: chrislusf/seaweedfs:4.40@sha256:52194fba4fecd0083c842158b3a902ba6e04a63619b2b0efcd08007bdb6a4602
+    user: "10001:10001"
+    restart: unless-stopped
+    depends_on:
+      seaweedfs-init:
+        condition: service_completed_successfully
+    command:
+      - mini
+      - -dir=/data
+      - -ip=seaweedfs
+      - -ip.bind=0.0.0.0
+      - -bucket=${MAKOLET_S3_BUCKET:-makolet-raw}
+      - -metricsPort=9327
+      - -master.telemetry=false
+      - -s3.allowDeleteBucketNotEmpty=false
+      - -volume.fileSizeLimitMB=2048
+      - -volume.concurrentUploadLimitMB=256
+      - -volume.concurrentDownloadLimitMB=256
+      - -s3.concurrentUploadLimitMB=256
+    environment:
+      AWS_ACCESS_KEY_ID: ${MAKOLET_S3_ACCESS_KEY:?MAKOLET_S3_ACCESS_KEY must be set}
+      AWS_SECRET_ACCESS_KEY: ${MAKOLET_S3_SECRET_KEY:?MAKOLET_S3_SECRET_KEY must be set}
+      S3_BUCKET: ${MAKOLET_S3_BUCKET:-makolet-raw}
+    ports:
+      - "127.0.0.1:${MAKOLET_S3_PORT:-8333}:8333"
+    volumes:
+      - seaweedfs_data:/data
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m,mode=1777
+    healthcheck:
+      test: ["CMD", "/usr/bin/wget", "-q", "-T", "2", "-O", "/dev/null", "http://127.0.0.1:9333/cluster/status"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 15s
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    cpus: 2.0
+    pids_limit: 256
+    stop_grace_period: 45s
+    networks:
+      - backend
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+  migrate:
+    <<: *app-service
+    command: ["makolet", "database", "migrate", "--json"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+    mem_limit: 512m
+    cpus: 1.0
+
+  api:
+    <<: *app-service
+    command: ["makolet", "api", "serve", "--host", "0.0.0.0", "--port", "8000"]
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      seaweedfs:
+        condition: service_healthy
+    ports:
+      - "${MAKOLET_BIND_ADDRESS:-127.0.0.1}:${MAKOLET_API_PORT:-8000}:8000"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/readyz', timeout=2).read()
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
+    mem_limit: 768m
+    cpus: 1.5
+
+  worker:
+    <<: *app-service
+    command: ["makolet", "ingest", "worker"]
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      seaweedfs:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:9100/healthz', timeout=2).read()
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 20s
+    mem_limit: 1g
+    cpus: 2.0
+
+  demo-seed:
+    <<: *app-service
+    profiles: ["demo"]
+    command: ["python", "/opt/makolet/deployment/seed_demo.py"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      seaweedfs:
+        condition: service_healthy
+    restart: "no"
+    mem_limit: 512m
+    cpus: 1.0
+
+  archive-tool:
+    <<: *app-service
+    profiles: ["operations"]
+    entrypoint: ["python", "/opt/makolet/deployment/archive_backup.py"]
+    command: ["--help"]
+    depends_on:
+      seaweedfs:
+        condition: service_healthy
+    restart: "no"
+    mem_limit: 512m
+    cpus: 1.0
+
+  prometheus:
+    image: prom/prometheus:v3.13.2-distroless@sha256:64f71bb84e03c855948418b0fc5dea53e9543d8e3fc9931598f583805507f05e
+    profiles: ["monitoring"]
+    user: "65532:65532"
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+      seaweedfs:
+        condition: service_healthy
+      worker:
+        condition: service_healthy
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=15d
+      - --storage.tsdb.retention.size=2GB
+      - --web.listen-address=0.0.0.0:9090
+    ports:
+      - "${MAKOLET_BIND_ADDRESS:-127.0.0.1}:${MAKOLET_PROMETHEUS_PORT:-9090}:9090"
+    volumes:
+      - ./deployment/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=32m,mode=1777
+    healthcheck:
+      test: ["CMD", "/bin/prometheus", "--version"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    cpus: 1.0
+    pids_limit: 128
+    stop_grace_period: 30s
+    networks:
+      - backend
+
+volumes:
+  postgres_data:
+  seaweedfs_data:
+  raw_archive_data:
+  export_data:
+  prometheus_data:
+
+networks:
+  backend:
+  outbound:

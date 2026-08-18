@@ -1,0 +1,64 @@
+{
+  "acceptance_evidence": false,
+  "acceptance_note": "standard parser scenario evidence; the other standard scenario was not run",
+  "environment": {
+    "available_memory_at_start_bytes": 3334144000,
+    "cpu_max_mhz": 2500.0,
+    "filesystem_free_at_start_bytes": 27870404608,
+    "filesystem_total_bytes": 999243640832,
+    "logical_cpu_cores": 12,
+    "machine": "AMD64",
+    "os": "Windows",
+    "os_release": "11",
+    "physical_cpu_cores": 6,
+    "physical_memory_bytes": 17032929280,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "process_id": 10588,
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.14.7 (main, Aug  7 2026, 02:26:22) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython"
+  },
+  "finished_at": "2026-08-15T23:39:18.973923+00:00",
+  "format_version": 1,
+  "git_revision": null,
+  "parser": {
+    "baseline_process_rss_bytes": 68911104,
+    "chunk_size_bytes": 65536,
+    "chunks": 8802,
+    "duration_seconds": 384.737072,
+    "memory_scope": "benchmark Python process RSS; PostgreSQL is not involved",
+    "metadata_records": 1,
+    "peak_process_rss_bytes": 77570048,
+    "peak_process_rss_delta_bytes": 8658944,
+    "peak_process_rss_delta_mib": 8.258,
+    "peak_process_rss_mib": 73.977,
+    "records": 1000000,
+    "rejected_records": 0,
+    "rows_per_second": 2599.18,
+    "scenario": "streaming_price_full_parser",
+    "throughput_mib_per_second": 1.43,
+    "xml_bytes": 576817086,
+    "xml_mib": 550.096
+  },
+  "profile": "standard",
+  "profile_inputs": {
+    "database": {
+      "history_rows": 10000,
+      "ingestion_store_count": 10,
+      "normalized_records": 1000000,
+      "query_repetitions": 100,
+      "query_warmups": 10,
+      "reconciliation_drop_records": 10000,
+      "store_count": 100
+    },
+    "parser_records": 1000000
+  },
+  "scenario": "parser",
+  "scenario_acceptance_evidence": {
+    "database": false,
+    "parser": true
+  },
+  "source_tree_sha256": "40ddc6be7a3340b85b34422e0571385c42b6a64c32c091246b27ff009bc9631d",
+  "started_at": "2026-08-15T23:32:54.190835+00:00",
+  "wall_duration_seconds": 384.783093
+}

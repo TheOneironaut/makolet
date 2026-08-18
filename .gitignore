@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+dist/
+build/
+
+# Runtime data and secrets
+.env
+.env.*
+!.env.example
+data/
+raw-archive/
+exports/
+.runtime-test/
+*.log
+*.dump
+*.backup
+*.hmac-sha256
+*.sha256
+*.key
+*.pem
+*.p12
+*.pfx
+.ci-*.json
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Redacted JSON measurements are versioned evidence referenced by docs/performance.md.
+# Bulky row-level or columnar outputs remain local artifacts.
+benchmarks/results/*.csv
+benchmarks/results/*.parquet

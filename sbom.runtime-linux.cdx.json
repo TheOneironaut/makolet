@@ -1,0 +1,6398 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/adduser@3.134?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "adduser",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/adduser/copyright|sha256:b143053a4862ab354831487b5f8bd31dc9ffdc589d15de9d9c764332a0209796"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "adduser"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.134"
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.134?arch=all",
+      "type": "operating-system",
+      "version": "3.134"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apt@2.6.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "apt",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/apt/copyright|sha256:b4701305243d8d746f4acaafe15d94f946251b05691bd6917fef41dd15e9ee12"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "apt"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.6.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@2.6.1?arch=amd64",
+      "type": "operating-system",
+      "version": "2.6.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@12.4%2Bdeb12u15?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic-1.0-Perl"
+          }
+        }
+      ],
+      "name": "base-files",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/base-files/copyright|sha256:fd7e4aae7e7b05f217bcf2d02322825c360e66c52c4c2f1b28d784d6297a1c23"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "base-files"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "12.4+deb12u15"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-files@12.4%2Bdeb12u15?arch=amd64",
+      "type": "operating-system",
+      "version": "12.4+deb12u15"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-passwd@3.6.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "base-passwd",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/base-passwd/copyright|sha256:0f1cde79bd80a75f9029ae9a8c252b642223027ef36f6989c63a8230aae576a7"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "base-passwd"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.6.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-passwd@3.6.1?arch=amd64",
+      "type": "operating-system",
+      "version": "3.6.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bash@5.2.15-2%2Bb13?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-4-clause-UC"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause-UC and MIT-like"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT-like"
+          }
+        },
+        {
+          "license": {
+            "name": "permissive"
+          }
+        }
+      ],
+      "name": "bash",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/bash/copyright|sha256:06319d84c3e5ed096036f6a9310a030c7e84e50dff2b8a6792285c83ec0ada73"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "bash"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "5.2.15-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/bash@5.2.15-2%2Bb13?arch=amd64",
+      "type": "operating-system",
+      "version": "5.2.15-2+b13"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bsdutils@1%3A2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "bsdutils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/bsdutils/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/bsdutils@1%3A2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "1:2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ca-certificates@20230311%2Bdeb12u1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "ca-certificates",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/ca-certificates/copyright|sha256:e85e1bcad3a915dc7e6f41412bc5bdeba275cadd817896ea0451f2140a93967c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "20230311+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/ca-certificates@20230311%2Bdeb12u1?arch=all",
+      "type": "operating-system",
+      "version": "20230311+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/coreutils@9.1-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-4-clause-UC"
+          }
+        },
+        {
+          "license": {
+            "name": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ and BSD-4-clause-UC"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ and ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "name": "coreutils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/coreutils/copyright|sha256:24e86c5ca53d6bfd8e0c47988160daa62d10a74997fe11f651e1d9533c78bff6"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "coreutils"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "9.1-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/coreutils@9.1-1?arch=amd64",
+      "type": "operating-system",
+      "version": "9.1-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dash@0.5.12-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "dash",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/dash/copyright|sha256:d98c53f281321baad38164aa9ae6e368a9253be6ec51bd26a759b5e72b326f4a"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "dash"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "0.5.12-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/dash@0.5.12-2?arch=amd64",
+      "type": "operating-system",
+      "version": "0.5.12-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debconf@1.5.82?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        }
+      ],
+      "name": "debconf",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/debconf/copyright|sha256:57163c71bd8a5289660892827dd0dfaa7fef47f89deedc9dc6711ced7d0a28d7"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "debconf"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.82"
+        }
+      ],
+      "purl": "pkg:deb/debian/debconf@1.5.82?arch=all",
+      "type": "operating-system",
+      "version": "1.5.82"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u2?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "Public-domain archive keys"
+          }
+        }
+      ],
+      "name": "debian-archive-keyring",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/debian-archive-keyring/copyright|sha256:b32aecaae84643700a33bc9ee83fa9b36938d35aa7b61b5042092eca77ddb732"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "debian-archive-keyring"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2023.3+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u2?arch=all",
+      "type": "operating-system",
+      "version": "2023.3+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "name": "SMAIL-GPL"
+          }
+        }
+      ],
+      "name": "debianutils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/debianutils/copyright|sha256:fd2d797e208bcfb713510e47a89867191180943e1167d44c2acd8ff1b88e5c10"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "debianutils"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "5.7-0.5~deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "5.7-0.5~deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/diffutils@1%3A3.8-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "name": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ and FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with autoconf exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.0+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3.0+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3.0+ or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "diffutils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/diffutils/copyright|sha256:8654d7cc7cdae1f31bb67a3ce5bf35d512c0bdfffd071df757edc54153cc7930"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "diffutils"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:3.8-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/diffutils@1%3A3.8-4?arch=amd64",
+      "type": "operating-system",
+      "version": "1:3.8-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dpkg@1.21.23?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain-s-s-d"
+          }
+        }
+      ],
+      "name": "dpkg",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/dpkg/copyright|sha256:7442bdadcd44e818fddd786057db07639cc68225c389c7c240d3bb3984b05173"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "dpkg"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.21.23"
+        }
+      ],
+      "purl": "pkg:deb/debian/dpkg@1.21.23?arch=amd64",
+      "type": "operating-system",
+      "version": "1.21.23"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/e2fsprogs@1.47.0-2%2Bb2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or MIT-US-export"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2"
+          }
+        }
+      ],
+      "name": "e2fsprogs",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/e2fsprogs/copyright|sha256:1ca415a294c0e56958c4f795b3f1f69ea3479bca53d7811f5cdd020a258949db"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.47.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/e2fsprogs@1.47.0-2%2Bb2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.47.0-2+b2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/findutils@4.9.0-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause and/or GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "FSFAP"
+          }
+        },
+        {
+          "license": {
+            "name": "FSFULLR"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL with automake exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Autoconf-data exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Autoconf-data exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison-2.2 exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC and/or LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "findutils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/findutils/copyright|sha256:8fbcc77ed31f480a85654e9b6d1d25cbb95b62e9dc5159ae1565bca684c3e1dc"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "findutils"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "4.9.0-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/findutils@4.9.0-4?arch=amd64",
+      "type": "operating-system",
+      "version": "4.9.0-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-12-base@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "name": "gcc-12-base:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/gcc-12-base/copyright|sha256:da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gcc-12"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "12.2.0-14+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-12-base@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "12.2.0-14+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgv@2.2.40-1.1%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ or BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "RFC-Reference"
+          }
+        },
+        {
+          "license": {
+            "name": "TinySCHEME"
+          }
+        }
+      ],
+      "name": "gpgv",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/gpgv/copyright|sha256:84dab06b5c1baf3a7a45c3cdc5f98fb121234e98fdd6266c3f773d54fcdc4f54"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gnupg2"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.2.40-1.1+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgv@2.2.40-1.1%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "2.2.40-1.1+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/grep@3.8-5?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        }
+      ],
+      "name": "grep",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/grep/copyright|sha256:42d9b4d610396b1e8d1303dcb9487af3f5a2d2709623cf03a04cf76acdf6c5e3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "grep"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.8-5"
+        }
+      ],
+      "purl": "pkg:deb/debian/grep@3.8-5?arch=amd64",
+      "type": "operating-system",
+      "version": "3.8-5"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gzip@1.12-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "FSF-manpages"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-1.3+-no-invariant"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        }
+      ],
+      "name": "gzip",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/gzip/copyright|sha256:1ca5dd5098fe2e1c0f0d05196f5b3da8b414a807702e6ca8b536eb5fd3059130"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gzip"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.12-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/gzip@1.12-1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.12-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        }
+      ],
+      "name": "hostname",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/hostname/copyright|sha256:94189fc5a9a7b7224d96e1a0cfdfe9be0df2018b04bf21d591627ab96b30cad1"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "hostname"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.23+nmu1"
+        }
+      ],
+      "purl": "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64",
+      "type": "operating-system",
+      "version": "3.23+nmu1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/init-system-helpers@1.65.2%2Bdeb12u1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "init-system-helpers",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/init-system-helpers/copyright|sha256:7534601cc4fa513804d16490359f5831e7b6a1212da3bbf948bebdd4c8799783"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "init-system-helpers"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.65.2+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/init-system-helpers@1.65.2%2Bdeb12u1?arch=all",
+      "type": "operating-system",
+      "version": "1.65.2+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        }
+      ],
+      "name": "libacl1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libacl1/copyright|sha256:9a2dfb4a5abc7e84be2cc41f1089be665519c9409549296f6c19de57ab1d37c2"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "acl"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.3.1-3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.3.1-3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "libapt-pkg6.0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libapt-pkg6.0/copyright|sha256:b4701305243d8d746f4acaafe15d94f946251b05691bd6917fef41dd15e9ee12"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "apt"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.6.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64",
+      "type": "operating-system",
+      "version": "2.6.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libattr1@1%3A2.5.1-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        }
+      ],
+      "name": "libattr1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libattr1/copyright|sha256:0cbec745d85ea775450b2d54fac55277197f429e52d611f72852ed420450620e"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "attr"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:2.5.1-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/libattr1@1%3A2.5.1-4?arch=amd64",
+      "type": "operating-system",
+      "version": "1:2.5.1-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit-common@1%3A3.0.9-1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "libaudit-common",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libaudit-common/copyright|sha256:6c7011e93f643b112c4cc3622131e28a30477afad6c4f5efe466b13aa7f603cc"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "audit"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:3.0.9-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit-common@1%3A3.0.9-1?arch=all",
+      "type": "operating-system",
+      "version": "1:3.0.9-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit1@1%3A3.0.9-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "libaudit1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libaudit1/copyright|sha256:6c7011e93f643b112c4cc3622131e28a30477afad6c4f5efe466b13aa7f603cc"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "audit"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:3.0.9-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit1@1%3A3.0.9-1?arch=amd64",
+      "type": "operating-system",
+      "version": "1:3.0.9-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libblkid1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libblkid1/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-variant"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        }
+      ],
+      "name": "libbz2-1.0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libbz2-1.0/copyright|sha256:832ed535ff3c3d025a8d2348eb1b697b89addcf2eaadbc17650262040b9145e2"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "bzip2"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.0.8-5"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.0.8-5+b1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u14?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD/permissive file-level terms"
+          }
+        }
+      ],
+      "name": "libc-bin",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libc-bin/copyright|sha256:40c7e1f2118531f038ca22999bd976901254e1bc5cd1b0f0211bdd064c599987"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "glibc"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.36-9+deb12u14"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u14?arch=amd64",
+      "type": "operating-system",
+      "version": "2.36-9+deb12u14"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u14?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD/permissive file-level terms"
+          }
+        }
+      ],
+      "name": "libc6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libc6/copyright|sha256:40c7e1f2118531f038ca22999bd976901254e1bc5cd1b0f0211bdd064c599987"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "glibc"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.36-9+deb12u14"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u14?arch=amd64",
+      "type": "operating-system",
+      "version": "2.36-9+deb12u14"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        }
+      ],
+      "name": "libcap-ng0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libcap-ng0/copyright|sha256:49b5db19990a3e3cc1a9ed716aed231f6f3c1c217e58f62ae4dc2818c6d3e9cc"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libcap-ng"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "0.8.3-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64",
+      "type": "operating-system",
+      "version": "0.8.3-1+b3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap2@1%3A2.66-4%2Bdeb12u3%2Bb1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "libcap2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libcap2/copyright|sha256:e60a5642e12e340060e4e519a65b2eb0330be2917854841c644e36268f607d54"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libcap2"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:2.66-4+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap2@1%3A2.66-4%2Bdeb12u3%2Bb1?arch=amd64",
+      "type": "operating-system",
+      "version": "1:2.66-4+deb12u3+b1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcom-err2@1.47.0-2%2Bb2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or MIT-US-export"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2"
+          }
+        }
+      ],
+      "name": "libcom-err2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libcom-err2/copyright|sha256:1ca415a294c0e56958c4f795b3f1f69ea3479bca53d7811f5cdd020a258949db"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.47.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcom-err2@1.47.0-2%2Bb2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.47.0-2+b2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcrypt1@1%3A4.4.33-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD/GPL/permissive file-level terms"
+          }
+        },
+        {
+          "license": {
+            "name": "Public-domain file-level material"
+          }
+        }
+      ],
+      "name": "libcrypt1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libcrypt1/copyright|sha256:5a5e7ca0e9f3f9679977e3a3e9ede45ad92885a3297ea78e766979f9866c5a16"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libxcrypt"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:4.4.33-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcrypt1@1%3A4.4.33-2?arch=amd64",
+      "type": "operating-system",
+      "version": "1:4.4.33-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Artistic or BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-fjord"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT-old"
+          }
+        },
+        {
+          "license": {
+            "name": "Ms-PL"
+          }
+        },
+        {
+          "license": {
+            "name": "Sleepycat"
+          }
+        },
+        {
+          "license": {
+            "name": "Sleepycat and BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "TCL-like"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        },
+        {
+          "license": {
+            "name": "zlib"
+          }
+        }
+      ],
+      "name": "libdb5.3:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libdb5.3/copyright|sha256:8b53da37d73289d9df7317b3a2dbe16491f1fa9fec8b77b86d69704b40ce2c26"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "db5.3"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "5.3.28+dfsg2-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64",
+      "type": "operating-system",
+      "version": "5.3.28+dfsg2-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "libdebconfclient0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libdebconfclient0/copyright|sha256:cf63099896d1c0f6529c41b8d95738e6fea342ffba609187d339c4f38ce36ecc"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "cdebconf"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "0.270"
+        }
+      ],
+      "purl": "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64",
+      "type": "operating-system",
+      "version": "0.270"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or MIT-US-export"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2"
+          }
+        }
+      ],
+      "name": "libext2fs2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libext2fs2/copyright|sha256:1ca415a294c0e56958c4f795b3f1f69ea3479bca53d7811f5cdd020a258949db"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.47.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.47.0-2+b2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MPL-1.1 or GPL-2+ or LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "libffi8:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libffi8/copyright|sha256:f83d2ecba1ea4d99957e81c50bebbd076a128194288a3ec22cc8ccdb77c43087"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libffi"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.4.4-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64",
+      "type": "operating-system",
+      "version": "3.4.4-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later WITH GCC-exception-3.1"
+          }
+        }
+      ],
+      "name": "libgcc-s1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgcc-s1/copyright|sha256:da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gcc-12"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "12.2.0-14+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "12.2.0-14+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcrypt20@1.10.1-3%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPLv2+ (manual and tools)"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPLv2.1+ (library)"
+          }
+        }
+      ],
+      "name": "libgcrypt20:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgcrypt20/copyright|sha256:95db2f9da663f2bfe2aabe9c72fce9d6c9ae767b912f397d7823f50bd55a1a7d"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libgcrypt20"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.10.1-3+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.10.1-3+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        }
+      ],
+      "name": "libgdbm6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgdbm6/copyright|sha256:8bea8cf2f94cd8b37a0b8b3a2b974122b9194c1165e6ad508e366c74679e8817"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gdbm"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.23-3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64",
+      "type": "operating-system",
+      "version": "1.23-3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgmp10@2%3A6.2.1%2Bdfsg1-1.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ or LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        }
+      ],
+      "name": "libgmp10:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgmp10/copyright|sha256:7d366aef5ba325150246de1d7820c4c9926cd27ca61a69948492b26cd3b61601"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gmp"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2:6.2.1+dfsg1-1.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgmp10@2%3A6.2.1%2Bdfsg1-1.1?arch=amd64",
+      "type": "operating-system",
+      "version": "2:6.2.1+dfsg1-1.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u7?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "CC0 license"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPLv3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPLv2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPLv3+_or_GPLv2+"
+          }
+        },
+        {
+          "license": {
+            "name": "The main library is licensed under GNU Lesser"
+          }
+        }
+      ],
+      "name": "libgnutls30:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgnutls30/copyright|sha256:bb7e5c24b3e27bbba5671dd710d159a0066833bda4caa1d55d8027ffed539337"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gnutls28"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.7.9-2+deb12u7"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u7?arch=amd64",
+      "type": "operating-system",
+      "version": "3.7.9-2+deb12u7"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+ or BSD-3-clause"
+          }
+        }
+      ],
+      "name": "libgpg-error0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libgpg-error0/copyright|sha256:8760fd36efa1d7186f8769d4e76a3e678045b94d54465bf6f2db5eb871c7c27f"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libgpg-error"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.46-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.46-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GAP"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Autoconf exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+ or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libhogweed6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libhogweed6/copyright|sha256:ca2ca597320220c00ef6dc0fe5d0d82025548d6d4ba80e85615eb691f9021f93"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "nettle"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.8.1-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64",
+      "type": "operating-system",
+      "version": "3.8.1-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+ or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "Unicode"
+          }
+        }
+      ],
+      "name": "libidn2-0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libidn2-0/copyright|sha256:41702469f28e8ff406345e3d1dd0c741f11bdfca319264f67036efd6aaa79e4b"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libidn2"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.3.3-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64",
+      "type": "operating-system",
+      "version": "2.3.3-1+b1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ or BSD-2-clause"
+          }
+        }
+      ],
+      "name": "liblz4-1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/liblz4-1/copyright|sha256:d3be0f43fe14da244f97c451bbae789c0acf868612598a69f5f22a289abeca40"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "lz4"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.9.4-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.9.4-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblzma5@5.4.1-1%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Autoconf"
+          }
+        },
+        {
+          "license": {
+            "name": "config-h"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "noderivs"
+          }
+        },
+        {
+          "license": {
+            "name": "none"
+          }
+        },
+        {
+          "license": {
+            "name": "PD"
+          }
+        },
+        {
+          "license": {
+            "name": "PD-debian"
+          }
+        },
+        {
+          "license": {
+            "name": "permissive-fsf"
+          }
+        },
+        {
+          "license": {
+            "name": "permissive-nowarranty"
+          }
+        },
+        {
+          "license": {
+            "name": "probably-PD"
+          }
+        }
+      ],
+      "name": "liblzma5:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/liblzma5/copyright|sha256:a2dc8fac0f496e1c58aff67018cf0c6b88336316afa5642f9335b71642e28aa8"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "xz-utils"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "5.4.1-1+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblzma5@5.4.1-1%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "5.4.1-1+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-2-clause-NetBSD"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-Aaron-D-Gifford"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain-md4"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain-md5"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain-sha1"
+          }
+        }
+      ],
+      "name": "libmd0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libmd0/copyright|sha256:4365ef6255ad553fce69dd4bc0e093472c5d0e41b8ea493a545cc926ce171aa6"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libmd"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.0.4-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.0.4-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libmount1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libmount1/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT/X11"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "libncursesw6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libncursesw6/copyright|sha256:f0974fb41778e23c94111ff90da0546de8971f8270c58877283d372e6bd7f17e"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "ncurses"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "6.4-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64",
+      "type": "operating-system",
+      "version": "6.4-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GAP"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Autoconf exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+ or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libnettle8:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libnettle8/copyright|sha256:ca2ca597320220c00ef6dc0fe5d0d82025548d6d4ba80e85615eb691f9021f93"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "nettle"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.8.1-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64",
+      "type": "operating-system",
+      "version": "3.8.1-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC+IBM"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "permissive-like-automake-output"
+          }
+        },
+        {
+          "license": {
+            "name": "same-as-rest-of-p11kit"
+          }
+        }
+      ],
+      "name": "libp11-kit0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libp11-kit0/copyright|sha256:ed139379f7c874f0ee75f3ddcc2e01091dd828d84ee1a0bdff6a1c5673ee6e58"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "p11-kit"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "0.24.1-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64",
+      "type": "operating-system",
+      "version": "0.24.1-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-tcp_wrappers"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libpam-modules-bin",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libpam-modules-bin/copyright|sha256:9596b9028339d66c285422237728d6170e1e29d0b0d9adf0e9f1bda82e2391ce"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "pam"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.2-6+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.5.2-6+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-tcp_wrappers"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libpam-modules:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libpam-modules/copyright|sha256:9596b9028339d66c285422237728d6170e1e29d0b0d9adf0e9f1bda82e2391ce"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "pam"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.2-6+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.5.2-6+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u2?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-tcp_wrappers"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libpam-runtime",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libpam-runtime/copyright|sha256:9596b9028339d66c285422237728d6170e1e29d0b0d9adf0e9f1bda82e2391ce"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "pam"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.2-6+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u2?arch=all",
+      "type": "operating-system",
+      "version": "1.5.2-6+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Beerware"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-tcp_wrappers"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libpam0g:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libpam0g/copyright|sha256:9596b9028339d66c285422237728d6170e1e29d0b0d9adf0e9f1bda82e2391ce"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "pam"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.2-6+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.5.2-6+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-Cambridge with BINARY LIBRARY-LIKE PACKAGES exception"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "libpcre2-8-0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libpcre2-8-0/copyright|sha256:030511beb4d9d620ad09914c369c36ec0528dcf301d1923cc643c948ee7c6a38"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "pcre2"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "10.42-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64",
+      "type": "operating-system",
+      "version": "10.42-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC-no-attribution"
+          }
+        }
+      ],
+      "name": "libreadline8:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libreadline8/copyright|sha256:3591a8e4de849d910c5ee9045388344ef151c23b10cf8c6b1950f89f1ba1569c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "readline"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "8.2-1.3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64",
+      "type": "operating-system",
+      "version": "8.2-1.3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "libseccomp2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libseccomp2/copyright|sha256:6da0653a365b80ab31478dbfe9e7c358e80d58b6d2b52b4e16b4dbb42d7d9f5c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libseccomp"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.5.4-1+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "2.5.4-1+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Public-domain libselinux"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only Debian and utility files"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later glibc excerpt"
+          }
+        }
+      ],
+      "name": "libselinux1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libselinux1/copyright|sha256:641806738b0c6a3d03168c2649e6b94205198bb66cd557e6bae3a20b71c9bb0b"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libselinux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.4-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64",
+      "type": "operating-system",
+      "version": "3.4-1+b6"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage-common@3.4-1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only Debian changes"
+          }
+        }
+      ],
+      "name": "libsemanage-common",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsemanage-common/copyright|sha256:e00e6a86c598f9e24ced0180a70a5f2f2e45e133d93adf2b17ce8a06ce4b1b51"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libsemanage"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.4-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage-common@3.4-1?arch=all",
+      "type": "operating-system",
+      "version": "3.4-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only Debian changes"
+          }
+        }
+      ],
+      "name": "libsemanage2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsemanage2/copyright|sha256:e00e6a86c598f9e24ced0180a70a5f2f2e45e133d93adf2b17ce8a06ce4b1b51"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libsemanage"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.4-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64",
+      "type": "operating-system",
+      "version": "3.4-1+b5"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "Zlib"
+          }
+        }
+      ],
+      "name": "libsepol2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsepol2/copyright|sha256:78d2a34606a0302057ec499a3b3c07bcbc43ca334064ce4c80891a0f69c8f6c6"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libsepol"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.4-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64",
+      "type": "operating-system",
+      "version": "3.4-2.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libsmartcols1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsmartcols1/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libsqlite3-0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsqlite3-0/copyright|sha256:78e9df8f8153c91c762ec970b82d224ac4d30f05aa7773e7e17e268141e53873"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "sqlite3"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.40.1-2+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "3.40.1-2+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libss2@1.47.0-2%2Bb2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or MIT-US-export"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2"
+          }
+        }
+      ],
+      "name": "libss2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libss2/copyright|sha256:1ca415a294c0e56958c4f795b3f1f69ea3479bca53d7811f5cdd020a258949db"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.47.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libss2@1.47.0-2%2Bb2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.47.0-2+b2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl3@3.0.20-1~deb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic or GPL-1+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+"
+          }
+        }
+      ],
+      "name": "libssl3:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libssl3/copyright|sha256:6a7da622fe0637a334d2a8fc470852d2ffb77d9a2b2f930f854e32a41ad6ef35"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "openssl"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.0.20-1~deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libssl3@3.0.20-1~deb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "3.0.20-1~deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later WITH GCC-exception-3.1"
+          }
+        }
+      ],
+      "name": "libstdc++6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libstdc++6/copyright|sha256:da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "gcc-12"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "12.2.0-14+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "12.2.0-14+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsystemd0@252.39-1~deb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2 with Linux-syscall-note exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libsystemd0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libsystemd0/copyright|sha256:a7d06854714a1ca99f6dbd1a1641dde5bcf28635be149f6554449618f8f427f3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "systemd"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "252.39-1~deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsystemd0@252.39-1~deb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "252.39-1~deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtasn1-6@4.19.0-2%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-1.3-or-later"
+          }
+        }
+      ],
+      "name": "libtasn1-6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libtasn1-6/copyright|sha256:572ad60ad184d8f52c6dc66d83a61a68f137db560b3452ce00588c9ecf128a65"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libtasn1-6"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "4.19.0-2+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtasn1-6@4.19.0-2%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "4.19.0-2+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT/X11"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "libtinfo6:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libtinfo6/copyright|sha256:f0974fb41778e23c94111ff90da0546de8971f8270c58877283d372e6bd7f17e"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "ncurses"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "6.4-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64",
+      "type": "operating-system",
+      "version": "6.4-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libudev1@252.39-1~deb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2 with Linux-syscall-note exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libudev1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libudev1/copyright|sha256:a7d06854714a1ca99f6dbd1a1641dde5bcf28635be149f6554449618f8f427f3"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "systemd"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "252.39-1~deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libudev1@252.39-1~deb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "252.39-1~deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring2@1.0-2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "FreeSoftware"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-1.2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with distribution exception"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ or GFDL-1.2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+ or GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "libunistring2:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libunistring2/copyright|sha256:0035f89e5317f3cec389383e8727788521b0fde3e75cea881fa0e92e1d48cb57"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libunistring"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring2@1.0-2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.0-2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "libuuid1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libuuid1/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        }
+      ],
+      "name": "libxxhash0:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libxxhash0/copyright|sha256:a123c93b07e781919ae996276ac02bb1c8b19dfde88176cd1240ab277c14a4ce"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "xxhash"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "0.8.1-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64",
+      "type": "operating-system",
+      "version": "0.8.1-1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause or GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "zlib"
+          }
+        }
+      ],
+      "name": "libzstd1:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/libzstd1/copyright|sha256:35e85e8e9bbb71492c5f5dddf39ed65b68775a02ad8d710c25d097b497f06c49"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "libzstd"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.5.4+dfsg2-5"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64",
+      "type": "operating-system",
+      "version": "1.5.4+dfsg2-5"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/login@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "login",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/login/copyright|sha256:a4c3e5b19700dd3cc5961663d204bd7150f65f913314682aede5931548c436d5"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "shadow"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:4.13+dfsg1-1+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/login@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "1:4.13+dfsg1-1+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/logsave@1.47.0-2%2Bb2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL or MIT-US-export"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ with Texinfo exception"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "Kazlib"
+          }
+        },
+        {
+          "license": {
+            "name": "Latex2e"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2"
+          }
+        }
+      ],
+      "name": "logsave",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/logsave/copyright|sha256:1ca415a294c0e56958c4f795b3f1f69ea3479bca53d7811f5cdd020a258949db"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.47.0-2"
+        }
+      ],
+      "purl": "pkg:deb/debian/logsave@1.47.0-2%2Bb2?arch=amd64",
+      "type": "operating-system",
+      "version": "1.47.0-2+b2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "CC-BY-3.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "mawk",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/mawk/copyright|sha256:167d04422f2fdf76ab565878c23be8ba0c2ebb2c57a5dac0a5a59ccd27e747a5"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "mawk"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.3.4.20200120-3.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.3.4.20200120-3.1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "mount",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/mount/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-base@6.4-4?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT/X11"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "ncurses-base",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/ncurses-base/copyright|sha256:f0974fb41778e23c94111ff90da0546de8971f8270c58877283d372e6bd7f17e"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "ncurses"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "6.4-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/ncurses-base@6.4-4?arch=all",
+      "type": "operating-system",
+      "version": "6.4-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT/X11"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "ncurses-bin",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/ncurses-bin/copyright|sha256:f0974fb41778e23c94111ff90da0546de8971f8270c58877283d372e6bd7f17e"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "ncurses"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "6.4-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64",
+      "type": "operating-system",
+      "version": "6.4-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@6.4?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        }
+      ],
+      "name": "netbase",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/netbase/copyright|sha256:795b66147ea5ad692991caa7008ece551fb0fa88b9c53656223bd1518dc58ab2"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "netbase"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "6.4"
+        }
+      ],
+      "purl": "pkg:deb/debian/netbase@6.4?arch=all",
+      "type": "operating-system",
+      "version": "6.4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@3.0.20-1~deb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic or GPL-1+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+"
+          }
+        }
+      ],
+      "name": "openssl",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/openssl/copyright|sha256:6a7da622fe0637a334d2a8fc470852d2ffb77d9a2b2f930f854e32a41ad6ef35"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "openssl"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.0.20-1~deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/openssl@3.0.20-1~deb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "3.0.20-1~deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/passwd@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "passwd",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/passwd/copyright|sha256:a4c3e5b19700dd3cc5961663d204bd7150f65f913314682aede5931548c436d5"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "shadow"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:4.13+dfsg1-1+deb12u2"
+        }
+      ],
+      "purl": "pkg:deb/debian/passwd@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64",
+      "type": "operating-system",
+      "version": "1:4.13+dfsg1-1+deb12u2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic or GPL-1+ or Artistic-dist"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic-2"
+          }
+        },
+        {
+          "license": {
+            "name": "Artistic-dist"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-GENERIC"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-with-weird-numbering"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause-POWERDOG"
+          }
+        },
+        {
+          "license": {
+            "name": "BZIP"
+          }
+        },
+        {
+          "license": {
+            "name": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "DONT-CHANGE-THE-GPL"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat or GPL-1+ or Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic or Artistic-dist"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic, and BSD-3-clause-GENERIC"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic, and BSD-4-clause-POWERDOG"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic, and Expat"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-1+ or Artistic, and Unicode"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+ or Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+-WITH-BISON-EXCEPTION"
+          }
+        },
+        {
+          "license": {
+            "name": "HSIEH-BSD"
+          }
+        },
+        {
+          "license": {
+            "name": "HSIEH-DERIVATIVE"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "name": "REGCOMP"
+          }
+        },
+        {
+          "license": {
+            "name": "REGCOMP, and GPL-1+ or Artistic"
+          }
+        },
+        {
+          "license": {
+            "name": "RRA-KEEP-THIS-NOTICE"
+          }
+        },
+        {
+          "license": {
+            "name": "SDBM-PUBLIC-DOMAIN"
+          }
+        },
+        {
+          "license": {
+            "name": "TEXT-TABS"
+          }
+        },
+        {
+          "license": {
+            "name": "Unicode"
+          }
+        },
+        {
+          "license": {
+            "name": "ZLIB"
+          }
+        }
+      ],
+      "name": "perl-base",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/perl-base/copyright|sha256:b52f3ca17b45473cb0da6ec46748949101fcf0dda1fd5d8b306e6c97fd41af4d"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "perl"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "5.36.0-7+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "5.36.0-7+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/readline-common@8.2-1.3?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC-no-attribution"
+          }
+        }
+      ],
+      "name": "readline-common",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/readline-common/copyright|sha256:3591a8e4de849d910c5ee9045388344ef151c23b10cf8c6b1950f89f1ba1569c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "readline"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "8.2-1.3"
+        }
+      ],
+      "purl": "pkg:deb/debian/readline-common@8.2-1.3?arch=all",
+      "type": "operating-system",
+      "version": "8.2-1.3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sed@4.9-1%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-4-clause-UC"
+          }
+        },
+        {
+          "license": {
+            "name": "BSL-1"
+          }
+        },
+        {
+          "license": {
+            "name": "GFDL-NIV-1.3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ and ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "ISC"
+          }
+        },
+        {
+          "license": {
+            "name": "pcre"
+          }
+        },
+        {
+          "license": {
+            "name": "X11"
+          }
+        }
+      ],
+      "name": "sed",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/sed/copyright|sha256:719320e425e8e6da53a55e0fcfa2f2ed9b1332cea16abd65321bd651b2a88568"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "sed"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "4.9-1+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/sed@4.9-1%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "4.9-1+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "sysvinit-utils",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/sysvinit-utils/copyright|sha256:ad7cb339e58a88918a883d553ca236795191f027e158788a8b33f747ff502fb2"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "sysvinit"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "3.06-4"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64",
+      "type": "operating-system",
+      "version": "3.06-4"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+ with Bison exception"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        }
+      ],
+      "name": "tar",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/tar/copyright|sha256:bea61e0c172868e07845cf50423f97f093a9a46de167dbbe333a38be610c8e00"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "tar"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1.34+dfsg-1.2+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64",
+      "type": "operating-system",
+      "version": "1.34+dfsg-1.2+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2026b-0%2Bdeb12u1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "tzdata",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/tzdata/copyright|sha256:cb61132bc0fc7b26ef5a82ee18b2fb644a1362f4f286ed980ff22e408471f59a"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "tzdata"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2026b-0+deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/tzdata@2026b-0%2Bdeb12u1?arch=all",
+      "type": "operating-system",
+      "version": "2026b-0+deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        }
+      ],
+      "name": "usr-is-merged",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/usr-is-merged/copyright|sha256:9836bfe2ef94505bbf29701e8c90799ab1a5fd966d26d60d019a822cdbf3d61a"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "usrmerge"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "37~deb12u1"
+        }
+      ],
+      "purl": "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all",
+      "type": "operating-system",
+      "version": "37~deb12u1"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "util-linux-extra",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/util-linux-extra/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-4-clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1+"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-3+"
+          }
+        },
+        {
+          "license": {
+            "name": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        }
+      ],
+      "name": "util-linux",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/util-linux/copyright|sha256:30539a2df6a89d844f43c727505a3193a60515f8ec6cdede8cc515ed22941d1c"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "util-linux"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "2.38.1-5+deb12u3"
+        }
+      ],
+      "purl": "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64",
+      "type": "operating-system",
+      "version": "2.38.1-5+deb12u3"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib1g@1%3A1.2.13.dfsg-1?arch=amd64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Zlib"
+          }
+        }
+      ],
+      "name": "zlib1g:amd64",
+      "properties": [
+        {
+          "name": "makolet:debian-copyright-evidence",
+          "value": "/usr/share/doc/zlib1g/copyright|sha256:9e5b96d63773a5d177ba264254390f792be07e41748ebd94730981c6cac31cc6"
+        },
+        {
+          "name": "makolet:debian-source",
+          "value": "zlib"
+        },
+        {
+          "name": "makolet:debian-source-version",
+          "value": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib1g@1%3A1.2.13.dfsg-1?arch=amd64",
+      "type": "operating-system",
+      "version": "1:1.2.13.dfsg-1"
+    },
+    {
+      "bom-ref": "pkg:generic/cpython@3.14.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "name": "CPython",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "/usr/local/lib/python3.14/LICENSE.txt|sha256:b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+        }
+      ],
+      "purl": "pkg:generic/cpython@3.14.7",
+      "type": "framework",
+      "version": "3.14.7"
+    },
+    {
+      "bom-ref": "pkg:pypi/alembic@1.19.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "alembic",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc"
+        }
+      ],
+      "purl": "pkg:pypi/alembic@1.19.1",
+      "type": "library",
+      "version": "1.19.1"
+    },
+    {
+      "bom-ref": "pkg:pypi/annotated-doc@0.0.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "annotated-doc",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-doc@0.0.5",
+      "type": "library",
+      "version": "0.0.5"
+    },
+    {
+      "bom-ref": "pkg:pypi/annotated-types@0.8.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "annotated-types",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ],
+      "purl": "pkg:pypi/annotated-types@0.8.0",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/anyio@4.14.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "anyio",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+        }
+      ],
+      "purl": "pkg:pypi/anyio@4.14.2",
+      "type": "library",
+      "version": "4.14.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/asyncpg@0.31.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "asyncpg",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:d9222d73fdac50992174076efa04f44f6fbcd9d56155a7c7092e98757042a6f6"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "pgproto.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "protocol.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "record.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        }
+      ],
+      "purl": "pkg:pypi/asyncpg@0.31.0",
+      "type": "library",
+      "version": "0.31.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/boto3@1.43.68",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "boto3",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "NOTICE|sha256:04fb1e61484a7810f1ba09bb42bc01ca58c9af33927d7c5a21556e4c4d1c7fa4"
+        }
+      ],
+      "purl": "pkg:pypi/boto3@1.43.68",
+      "type": "library",
+      "version": "1.43.68"
+    },
+    {
+      "bom-ref": "pkg:pypi/botocore@1.43.68",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "botocore",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "NOTICE|sha256:1d1c5a6f3d68cb11f4fad1afa86a7450d0286f15c176ef0ea048f255b46d95b0"
+        }
+      ],
+      "purl": "pkg:pypi/botocore@1.43.68",
+      "type": "library",
+      "version": "1.43.68"
+    },
+    {
+      "bom-ref": "pkg:pypi/certifi@2026.7.22",
+      "licenses": [
+        {
+          "license": {
+            "name": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "certifi",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ],
+      "purl": "pkg:pypi/certifi@2026.7.22",
+      "type": "library",
+      "version": "2026.7.22"
+    },
+    {
+      "bom-ref": "pkg:pypi/click@8.4.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "click",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ],
+      "purl": "pkg:pypi/click@8.4.2",
+      "type": "library",
+      "version": "8.4.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/fastapi@0.141.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "fastapi",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+        }
+      ],
+      "purl": "pkg:pypi/fastapi@0.141.1",
+      "type": "library",
+      "version": "0.141.1"
+    },
+    {
+      "bom-ref": "pkg:pypi/greenlet@3.5.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT AND PSF-2.0"
+          }
+        }
+      ],
+      "name": "greenlet",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.PSF|sha256:e5ff3c23c110e494cd7d736c10fd96d462457bafeca310840db6527298c7d46b"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:769831d6e5dfaf2c20802faccff1fafb4c2025dd8f6253dfa47fcad59d4d0979"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "_greenlet.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libgcc_s.so.1,libm.so.6,libpthread.so.0,libstdc++.so.6"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "_test_extension.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "_test_extension_cpp.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libgcc_s.so.1,libm.so.6,libpthread.so.0,libstdc++.so.6"
+        }
+      ],
+      "purl": "pkg:pypi/greenlet@3.5.5",
+      "type": "library",
+      "version": "3.5.5"
+    },
+    {
+      "bom-ref": "pkg:pypi/h11@0.16.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "h11",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+        }
+      ],
+      "purl": "pkg:pypi/h11@0.16.0",
+      "type": "library",
+      "version": "0.16.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/httpcore@1.0.9",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "httpcore",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.md|sha256:fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+        }
+      ],
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "type": "library",
+      "version": "1.0.9"
+    },
+    {
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "httpx",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.md|sha256:4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+        }
+      ],
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library",
+      "version": "0.28.1"
+    },
+    {
+      "bom-ref": "pkg:pypi/idna@3.18",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "idna",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.md|sha256:1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ],
+      "purl": "pkg:pypi/idna@3.18",
+      "type": "library",
+      "version": "3.18"
+    },
+    {
+      "bom-ref": "pkg:pypi/jmespath@1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "jmespath",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:6eefacfa4d71b82d08408c751470ac8d9854538da2142cb27be0287fb13d0ab9"
+        }
+      ],
+      "purl": "pkg:pypi/jmespath@1.1.0",
+      "type": "library",
+      "version": "1.1.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/mako@1.4.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "Mako",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:8c1d171bc5d341ad9cd33d5e2c39b96a82c7bd49b3ae89a470c37e5822232054"
+        }
+      ],
+      "purl": "pkg:pypi/mako@1.4.1",
+      "type": "library",
+      "version": "1.4.1"
+    },
+    {
+      "bom-ref": "pkg:pypi/markdown-it-py@4.2.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "name": "markdown-it-py",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.markdown-it|sha256:792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484"
+        }
+      ],
+      "purl": "pkg:pypi/markdown-it-py@4.2.0",
+      "type": "library",
+      "version": "4.2.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/markupsafe@3.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "MarkupSafe",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "_speedups.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        }
+      ],
+      "purl": "pkg:pypi/markupsafe@3.0.3",
+      "type": "library",
+      "version": "3.0.3"
+    },
+    {
+      "bom-ref": "pkg:pypi/mdurl@0.1.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "name": "mdurl",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:7c605df6e28667a9603118e98274f64a49ce3eed0d26fccce9534a345e0ef955"
+        }
+      ],
+      "purl": "pkg:pypi/mdurl@0.1.2",
+      "type": "library",
+      "version": "0.1.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/prometheus_client@0.26.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0 AND BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "prometheus_client",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "NOTICE|sha256:4efa1874aeaa60f365f5797e617f1ff933e15e508eaf751e9848ed4413d7a7ae"
+        }
+      ],
+      "purl": "pkg:pypi/prometheus_client@0.26.0",
+      "type": "library",
+      "version": "0.26.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/pydantic-settings@2.15.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "pydantic-settings",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic-settings@2.15.0",
+      "type": "library",
+      "version": "2.15.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/pydantic@2.13.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "pydantic",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@2.13.4",
+      "type": "library",
+      "version": "2.13.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/pydantic_core@2.46.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "pydantic_core",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "pydantic-core.cyclonedx.json|sha256:5f627c96af4156b8faf8804666347d888f1ddd75846dcd76a124932b1e06adb3"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "_pydantic_core.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libdl.so.2,libgcc_s.so.1,libpthread.so.0,librt.so.1"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic_core@2.46.4",
+      "type": "library",
+      "version": "2.46.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/pygments@2.20.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "Pygments",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "AUTHORS|sha256:0db603a5f4499f690c4425477ff664c166da325d3acc3b5a8d4de3db072443d0"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "purl": "pkg:pypi/pygments@2.20.0",
+      "type": "library",
+      "version": "2.20.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dual License"
+          }
+        }
+      ],
+      "name": "python-dateutil",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+        }
+      ],
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "version": "2.9.0.post0"
+    },
+    {
+      "bom-ref": "pkg:pypi/python-dotenv@1.2.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "python-dotenv",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+        }
+      ],
+      "purl": "pkg:pypi/python-dotenv@1.2.2",
+      "type": "library",
+      "version": "1.2.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/rich@15.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "rich",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+        }
+      ],
+      "purl": "pkg:pypi/rich@15.0.0",
+      "type": "library",
+      "version": "15.0.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/s3transfer@0.19.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "name": "s3transfer",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "NOTICE.txt|sha256:d8354e0fa7fb762da7bc054a8a6774a0b310dfbbc78006393ee573a0e57612b5"
+        }
+      ],
+      "purl": "pkg:pypi/s3transfer@0.19.2",
+      "type": "library",
+      "version": "0.19.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/shellingham@1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC License"
+          }
+        }
+      ],
+      "name": "shellingham",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+        }
+      ],
+      "purl": "pkg:pypi/shellingham@1.5.4",
+      "type": "library",
+      "version": "1.5.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "six",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+        }
+      ],
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "version": "1.17.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/sqlalchemy@2.0.51",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "SQLAlchemy",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:e862bb5b904fb5513c3e14288d7a25a12eb0ecc7847a0a965d310e9a955e7cb9"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "collections.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "immutabledict.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "processors.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "resultproxy.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        },
+        {
+          "name": "makolet:native-dynamic-links",
+          "value": "util.cpython-314-x86_64-linux-gnu.so|/lib64/ld-linux-x86-64.so.2,libc.so.6,libpthread.so.0"
+        }
+      ],
+      "purl": "pkg:pypi/sqlalchemy@2.0.51",
+      "type": "library",
+      "version": "2.0.51"
+    },
+    {
+      "bom-ref": "pkg:pypi/starlette@1.6.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "starlette",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.md|sha256:dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+        }
+      ],
+      "purl": "pkg:pypi/starlette@1.6.0",
+      "type": "library",
+      "version": "1.6.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/structlog@26.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT OR Apache-2.0"
+          }
+        }
+      ],
+      "name": "structlog",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE-APACHE|sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE-MIT|sha256:2bc12bb94eec2ccea211daebb763235bec3169276197a7be1f858963db31c5dd"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "NOTICE|sha256:274a71ae064275a87378f2a93ad2cf351b2929f016e280a33fc3c836a3f0f84c"
+        }
+      ],
+      "purl": "pkg:pypi/structlog@26.1.0",
+      "type": "library",
+      "version": "26.1.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/tenacity@9.1.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "name": "tenacity",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        }
+      ],
+      "purl": "pkg:pypi/tenacity@9.1.4",
+      "type": "library",
+      "version": "9.1.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/typer@0.27.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "typer",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+        }
+      ],
+      "purl": "pkg:pypi/typer@0.27.1",
+      "type": "library",
+      "version": "0.27.1"
+    },
+    {
+      "bom-ref": "pkg:pypi/typing-inspection@0.4.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "typing-inspection",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ],
+      "purl": "pkg:pypi/typing-inspection@0.4.3",
+      "type": "library",
+      "version": "0.4.3"
+    },
+    {
+      "bom-ref": "pkg:pypi/typing_extensions@4.16.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "PSF-2.0"
+          }
+        }
+      ],
+      "name": "typing_extensions",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "purl": "pkg:pypi/typing_extensions@4.16.0",
+      "type": "library",
+      "version": "4.16.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/tzdata@2026.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "tzdata",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE_APACHE|sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE|sha256:df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+        }
+      ],
+      "purl": "pkg:pypi/tzdata@2026.3",
+      "type": "library",
+      "version": "2026.3"
+    },
+    {
+      "bom-ref": "pkg:pypi/urllib3@2.7.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "name": "urllib3",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.txt|sha256:130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "purl": "pkg:pypi/urllib3@2.7.0",
+      "type": "library",
+      "version": "2.7.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/uvicorn@0.52.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "uvicorn",
+      "properties": [
+        {
+          "name": "makolet:artifact-evidence",
+          "value": "LICENSE.md|sha256:efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+        }
+      ],
+      "purl": "pkg:pypi/uvicorn@0.52.1",
+      "type": "library",
+      "version": "0.52.1"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [
+        "pkg:pypi/alembic@1.19.1",
+        "pkg:pypi/annotated-doc@0.0.5",
+        "pkg:pypi/annotated-types@0.8.0",
+        "pkg:pypi/anyio@4.14.2",
+        "pkg:pypi/asyncpg@0.31.0",
+        "pkg:pypi/boto3@1.43.68",
+        "pkg:pypi/botocore@1.43.68",
+        "pkg:pypi/certifi@2026.7.22",
+        "pkg:pypi/click@8.4.2",
+        "pkg:pypi/fastapi@0.141.1",
+        "pkg:pypi/greenlet@3.5.5",
+        "pkg:pypi/h11@0.16.0",
+        "pkg:pypi/httpcore@1.0.9",
+        "pkg:pypi/httpx@0.28.1",
+        "pkg:pypi/idna@3.18",
+        "pkg:pypi/jmespath@1.1.0",
+        "pkg:pypi/mako@1.4.1",
+        "pkg:pypi/markdown-it-py@4.2.0",
+        "pkg:pypi/markupsafe@3.0.3",
+        "pkg:pypi/mdurl@0.1.2",
+        "pkg:pypi/prometheus_client@0.26.0",
+        "pkg:pypi/pydantic-settings@2.15.0",
+        "pkg:pypi/pydantic@2.13.4",
+        "pkg:pypi/pydantic_core@2.46.4",
+        "pkg:pypi/pygments@2.20.0",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/python-dotenv@1.2.2",
+        "pkg:pypi/rich@15.0.0",
+        "pkg:pypi/s3transfer@0.19.2",
+        "pkg:pypi/shellingham@1.5.4",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/sqlalchemy@2.0.51",
+        "pkg:pypi/starlette@1.6.0",
+        "pkg:pypi/structlog@26.1.0",
+        "pkg:pypi/tenacity@9.1.4",
+        "pkg:pypi/typer@0.27.1",
+        "pkg:pypi/typing-inspection@0.4.3",
+        "pkg:pypi/typing_extensions@4.16.0",
+        "pkg:pypi/tzdata@2026.3",
+        "pkg:pypi/urllib3@2.7.0",
+        "pkg:pypi/uvicorn@0.52.1"
+      ],
+      "ref": "pkg:pypi/makolet@0.1.0"
+    },
+    {
+      "ref": "pkg:deb/debian/adduser@3.134?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/apt@2.6.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/base-files@12.4%2Bdeb12u15?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/base-passwd@3.6.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/bash@5.2.15-2%2Bb13?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/bsdutils@1%3A2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/ca-certificates@20230311%2Bdeb12u1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/coreutils@9.1-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/dash@0.5.12-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/debconf@1.5.82?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u2?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/diffutils@1%3A3.8-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/dpkg@1.21.23?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/e2fsprogs@1.47.0-2%2Bb2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/findutils@4.9.0-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/gcc-12-base@12.2.0-14%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/gpgv@2.2.40-1.1%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/grep@3.8-5?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/gzip@1.12-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/init-system-helpers@1.65.2%2Bdeb12u1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libattr1@1%3A2.5.1-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libaudit-common@1%3A3.0.9-1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/libaudit1@1%3A3.0.9-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u14?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u14?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libcap2@1%3A2.66-4%2Bdeb12u3%2Bb1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libcom-err2@1.47.0-2%2Bb2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libcrypt1@1%3A4.4.33-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgcrypt20@1.10.1-3%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgmp10@2%3A6.2.1%2Bdfsg1-1.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u7?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/liblzma5@5.4.1-1%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u2?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libsemanage-common@3.4-1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libss2@1.47.0-2%2Bb2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libssl3@3.0.20-1~deb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libsystemd0@252.39-1~deb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libtasn1-6@4.19.0-2%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libudev1@252.39-1~deb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libunistring2@1.0-2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/login@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/logsave@1.47.0-2%2Bb2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/ncurses-base@6.4-4?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/netbase@6.4?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/openssl@3.0.20-1~deb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/passwd@1%3A4.13%2Bdfsg1-1%2Bdeb12u2?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/readline-common@8.2-1.3?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/sed@4.9-1%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/tzdata@2026b-0%2Bdeb12u1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all"
+    },
+    {
+      "ref": "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64"
+    },
+    {
+      "ref": "pkg:deb/debian/zlib1g@1%3A1.2.13.dfsg-1?arch=amd64"
+    },
+    {
+      "ref": "pkg:generic/cpython@3.14.7"
+    },
+    {
+      "ref": "pkg:pypi/alembic@1.19.1"
+    },
+    {
+      "ref": "pkg:pypi/annotated-doc@0.0.5"
+    },
+    {
+      "ref": "pkg:pypi/annotated-types@0.8.0"
+    },
+    {
+      "ref": "pkg:pypi/anyio@4.14.2"
+    },
+    {
+      "ref": "pkg:pypi/asyncpg@0.31.0"
+    },
+    {
+      "ref": "pkg:pypi/boto3@1.43.68"
+    },
+    {
+      "ref": "pkg:pypi/botocore@1.43.68"
+    },
+    {
+      "ref": "pkg:pypi/certifi@2026.7.22"
+    },
+    {
+      "ref": "pkg:pypi/click@8.4.2"
+    },
+    {
+      "ref": "pkg:pypi/fastapi@0.141.1"
+    },
+    {
+      "ref": "pkg:pypi/greenlet@3.5.5"
+    },
+    {
+      "ref": "pkg:pypi/h11@0.16.0"
+    },
+    {
+      "ref": "pkg:pypi/httpcore@1.0.9"
+    },
+    {
+      "ref": "pkg:pypi/httpx@0.28.1"
+    },
+    {
+      "ref": "pkg:pypi/idna@3.18"
+    },
+    {
+      "ref": "pkg:pypi/jmespath@1.1.0"
+    },
+    {
+      "ref": "pkg:pypi/mako@1.4.1"
+    },
+    {
+      "ref": "pkg:pypi/markdown-it-py@4.2.0"
+    },
+    {
+      "ref": "pkg:pypi/markupsafe@3.0.3"
+    },
+    {
+      "ref": "pkg:pypi/mdurl@0.1.2"
+    },
+    {
+      "ref": "pkg:pypi/prometheus_client@0.26.0"
+    },
+    {
+      "ref": "pkg:pypi/pydantic-settings@2.15.0"
+    },
+    {
+      "ref": "pkg:pypi/pydantic@2.13.4"
+    },
+    {
+      "ref": "pkg:pypi/pydantic_core@2.46.4"
+    },
+    {
+      "ref": "pkg:pypi/pygments@2.20.0"
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0"
+    },
+    {
+      "ref": "pkg:pypi/python-dotenv@1.2.2"
+    },
+    {
+      "ref": "pkg:pypi/rich@15.0.0"
+    },
+    {
+      "ref": "pkg:pypi/s3transfer@0.19.2"
+    },
+    {
+      "ref": "pkg:pypi/shellingham@1.5.4"
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0"
+    },
+    {
+      "ref": "pkg:pypi/sqlalchemy@2.0.51"
+    },
+    {
+      "ref": "pkg:pypi/starlette@1.6.0"
+    },
+    {
+      "ref": "pkg:pypi/structlog@26.1.0"
+    },
+    {
+      "ref": "pkg:pypi/tenacity@9.1.4"
+    },
+    {
+      "ref": "pkg:pypi/typer@0.27.1"
+    },
+    {
+      "ref": "pkg:pypi/typing-inspection@0.4.3"
+    },
+    {
+      "ref": "pkg:pypi/typing_extensions@4.16.0"
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2026.3"
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.7.0"
+    },
+    {
+      "ref": "pkg:pypi/uvicorn@0.52.1"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:pypi/makolet@0.1.0",
+      "name": "makolet",
+      "properties": [
+        {
+          "name": "makolet:base-image",
+          "value": "python:3.14.7-slim-bookworm@sha256:23c59390fc717bf09f9336908199a0ae75d9c4264bf296123f94ad772fea3b52"
+        },
+        {
+          "name": "makolet:platform",
+          "value": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.36"
+        }
+      ],
+      "type": "application",
+      "version": "0.1.0"
+    },
+    "tools": [
+      {
+        "name": "scripts/generate_runtime_sbom.py",
+        "version": "2"
+      }
+    ]
+  },
+  "specVersion": "1.5",
+  "version": 1
+}

@@ -1,0 +1,1 @@
+"""Makolet test suite."""
