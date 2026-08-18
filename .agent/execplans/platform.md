@@ -12,6 +12,8 @@ boundaries.
 
 ## Current status
 
+2026-08-19T02:28:00+03:00 - Leftover cleanup after Phase 8 close is now verified. Remote host `v2202512314232412002` has no `/tmp` or `/home/amitay/tmp` makolet-standard/bench trees, no `makolet`/`0daaa40f` containers or volumes, and no listener on `55518`. Owner loopback databases on `5432`/`55432`/`55434` were left running. Local disposable WSL user-space PostgreSQL at `~/.makolet-local` was stopped and deleted. Local Temp helper scripts, the `0daaa40f` source tarball, credential-bearing SQL/env files, and leftover `makolet-deployment-verify-20260811` were removed. The clean-clone path is gone. `D:` and `E:` have no Makolet leftover roots. The workspace then had only this docs-only ExecPlan leftover-cleanup note plus expected gitignored caches. Digest and first commit are unchanged. This statement supersedes older leftover-cleanup notes below without rewriting their dated evidence.
+
 2026-08-19T02:16:09+03:00 - Phase 8 verification is terminal on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` and first local `main` commit `54ffb79666753aab42986c8fabc53d16c5449d56`. Quiet-host standard `scenario=all` passed with `benchmarks/results/20260819-standard-all-0daaa40f.json` (SHA-256 `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`). A clean local clone of that commit on C reproduced frozen setup, advertised CLI help, static checks, offline pytest 1,281 passed / 6 skipped / 77 deselected, and core-service acceptance: disposable `makolet_test_clone_54ffb79` on loopback PostgreSQL 18.4 `127.0.0.1:55434` migrated to head `0011_resource_probe_budgets` with `schema_ready=true` and `makolet doctor` `ok=true`. The clone, test database, and credential file were removed. No remote exists. Phase 8 and overall completion are now marked complete. This statement supersedes older current-status entries below without rewriting their dated evidence.
 
 2026-08-19T01:57:00+03:00 - First main commit 54ffb79666753aab42986c8fabc53d16c5449d56 exists locally with no remote. Quiet-host standard scenario=all passed on digest 0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805 via benchmarks/results/20260819-standard-all-0daaa40f.json. A clean local clone of that commit on C reproduced frozen uv sync --all-groups --frozen, uv lock --check, Ruff format/lint, mypy 176 files, docs, secrets, advertised CLI help, and offline pytest 1281 passed / 6 skipped / 77 deselected. makolet doctor without a database correctly reported database_unavailable while archive/sources/ingestion/operations/worker/export were ok. The disposable clone was deleted. Phase 8 remains open for remaining documented core-service acceptance that needs isolated PostgreSQL from a clean clone, then the final ExecPlan close. This statement supersedes older current-status entries below without rewriting their dated evidence.
@@ -1951,10 +1953,10 @@ remove, or reuse a database/container owned by another workstream. Real-database
 tests must use a database whose name contains `test`; benchmark work must use its
 dedicated URL/schema. Never paste credentials, signed URLs, or raw retailer files
 into the plan. D/E remain out of scope. Isolated remote standard leftovers are gone.
-A later disposable clone database `makolet_test_clone_54ffb79` was dropped; the
-user-space PostgreSQL 18.4 install on loopback `127.0.0.1:55434` may still be
-running and should be stopped after use. Historical artifacts `b9aababf` and
-`c53ec893` must not be overwritten.
+The disposable clone path, clone database `makolet_test_clone_54ffb79`, WSL
+user-space PostgreSQL install at `~/.makolet-local`, and local Temp helper
+files were removed. Historical artifacts `b9aababf` and `c53ec893` must not be
+overwritten.
 
 ## Remaining work
 
