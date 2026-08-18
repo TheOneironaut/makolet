@@ -12,6 +12,10 @@ boundaries.
 
 ## Current status
 
+2026-08-19T02:16:09+03:00 - Phase 8 verification is terminal on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` and first local `main` commit `54ffb79666753aab42986c8fabc53d16c5449d56`. Quiet-host standard `scenario=all` passed with `benchmarks/results/20260819-standard-all-0daaa40f.json` (SHA-256 `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`). A clean local clone of that commit on C reproduced frozen setup, advertised CLI help, static checks, offline pytest 1,281 passed / 6 skipped / 77 deselected, and core-service acceptance: disposable `makolet_test_clone_54ffb79` on loopback PostgreSQL 18.4 `127.0.0.1:55434` migrated to head `0011_resource_probe_budgets` with `schema_ready=true` and `makolet doctor` `ok=true`. The clone, test database, and credential file were removed. No remote exists. Phase 8 and overall completion are now marked complete. This statement supersedes older current-status entries below without rewriting their dated evidence.
+
+2026-08-19T01:57:00+03:00 - First main commit 54ffb79666753aab42986c8fabc53d16c5449d56 exists locally with no remote. Quiet-host standard scenario=all passed on digest 0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805 via benchmarks/results/20260819-standard-all-0daaa40f.json. A clean local clone of that commit on C reproduced frozen uv sync --all-groups --frozen, uv lock --check, Ruff format/lint, mypy 176 files, docs, secrets, advertised CLI help, and offline pytest 1281 passed / 6 skipped / 77 deselected. makolet doctor without a database correctly reported database_unavailable while archive/sources/ingestion/operations/worker/export were ok. The disposable clone was deleted. Phase 8 remains open for remaining documented core-service acceptance that needs isolated PostgreSQL from a clean clone, then the final ExecPlan close. This statement supersedes older current-status entries below without rewriting their dated evidence.
+
 2026-08-19T00:39:27+02:00 - Remote quiet-host standard `scenario=all` on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` completed and passed every measured floor. Artifact `benchmarks/results/20260819-standard-all-0daaa40f.json` (SHA-256 `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`) records staging 34,767.74 rows/s (279.7% of 12,427.93), initial apply 3,958.71 rows/s (250.7% of 1,579.00), amplification 2,584.90 rows/s for 10,000,000 rows (178.4% of 1,449.14), reconciliation apply 9,400.38 rows/s, plan_gate passed with zero failures, and `makolet_benchmark` dropped after capture. Isolated remote resources `makolet-bench-0daaa40f`, volume, tree, and port 55518 are gone. Historical `b9aababf` / `c53ec893` artifacts were not overwritten. First commit and clean-clone proof remain; Phase 8 is not complete. This statement supersedes older current-status entries below without rewriting their dated evidence.
 
 2026-08-19T00:10:19+02:00 - Remote quiet-host standard `scenario=all` on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` is still in current-price amplification: `current_prices` n_live_tup = 7,390,433 / 10,000,000, database 9,352 MB. Recent store copies have slowed to about 60k-80k rows/min after autovacuum/`DataFileRead`, still above the 70% amplification floor of 1,449.14. Isolated PostgreSQL remains `makolet-bench-0daaa40f` on `127.0.0.1:55518`. Client pid 1255967 / python 1255971 still alive (~41 min). No result JSON yet; queries, plan gate, and cleanup remain after amplification. First commit and Phase 8 remain deferred. This statement supersedes older current-status entries below without rewriting their dated evidence.
@@ -276,9 +280,10 @@ snapshot. A final rescan of the frozen post-SBOM tree remains the next gate.
 
 - [x] Phase 1: establish official-source/open-source research, licensing/SBOM
   evidence, the source matrix, architecture decisions, and this living plan.
-- [~] Phase 2: implement the locked Python/PostgreSQL/SeaweedFS foundation,
+- [x] Phase 2: implement the locked Python/PostgreSQL/SeaweedFS foundation,
   migrations, domain values, repository layout, quality configuration, and CI;
-  final clean-environment verification remains.
+  a clean local clone of `54ffb79` reproduced frozen setup and static/offline
+  checks.
 - [x] Phase 3: implement a discovery → exact-byte archive → parse → stage/apply →
   query/replay vertical slice shared by CLI, HTTP, and MCP, including one
   real-PostgreSQL cross-interface end-to-end proof.
@@ -292,18 +297,18 @@ snapshot. A final rescan of the frozen post-SBOM tree remains the next gate.
   matching, normalized multilingual/barcode search, current price/availability,
   comparison, history, and promotion queries with current-head real-service and plan
   verification.
-- [~] Phase 7: implement worker leases/retries/recovery, quarantine, structured logs,
+- [x] Phase 7: implement worker leases/retries/recovery, quarantine, structured logs,
   API/worker Prometheus endpoints, immutable local/S3 archives, Parquet export,
-  Compose, backup/restore tools, and benchmark scenarios; implementation is complete,
-  but the frozen-tree image/container fixed point, performance rerun, and final
-  clean-environment verification remain.
-- [~] Phase 8: complete a clean-clone setup, all offline/real-service/container/live
+  Compose, backup/restore tools, and benchmark scenarios. Image/SBOM, container
+  smoke, quiet-host standard performance, and clean-clone verification are recorded
+  on digest `0daaa40f...`.
+- [x] Phase 8: complete a clean-clone setup, all offline/real-service/container/live
   gates, representative ingest/replay/history proof through CLI/HTTP/MCP, measured
   scale and performance acceptance, documentation command/link checks, and the final
-  report. Current offline, isolated service, live, distribution, image/SBOM,
-  container/coverage/backup-restore, and quiet-host standard performance checks are
-  green on digest `0daaa40f...`; the final scan sealed zero findings with partial
-  coverage. First commit and clean clone remain open.
+  report. Digest `0daaa40f...` now has current offline, isolated service, live,
+  distribution, image/SBOM, container/coverage/backup-restore, quiet-host standard
+  performance, first `main` commit `54ffb79`, and clean-clone core-service evidence.
+  The final scan sealed zero findings with partial coverage.
 
 ## Decisions
 
@@ -674,6 +679,10 @@ snapshot. A final rescan of the frozen post-SBOM tree remains the next gate.
 
 ## Verification evidence
 
+- 2026-08-19T00:39:27+02:00 — remote quiet-host `uv run makolet benchmark run --standard --output benchmarks/results/20260819-standard-all-0daaa40f.json` completed on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` with acceptance_evidence=true, staging 34,767.74, apply 3,958.71, amplification 2,584.90 rows/s, plan_gate passed, and schema dropped after capture. Artifact SHA-256 `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`.
+- 2026-08-19T01:40:00+03:00 — first local `main` commit `54ffb79666753aab42986c8fabc53d16c5449d56` created after secrets and `git diff --cached --check`. No remote.
+- 2026-08-19T01:56:00+03:00 — clean clone of `54ffb79` on C passed frozen sync/lock, Ruff, mypy 176 files, docs, secrets, `makolet --help`, and offline pytest 1,281 passed / 6 skipped / 77 deselected.
+- 2026-08-19T02:10:00+03:00 — the same clone migrated disposable `makolet_test_clone_54ffb79` on PostgreSQL 18.4 `127.0.0.1:55434` to `0011_resource_probe_budgets` with `schema_ready=true` and `makolet doctor` `ok=true`. The clone, archive temp, credential file, and database were removed.
 - 2026-08-11 — `uv run makolet --help`, `uv run makolet ingest --help`,
   `uv run makolet products search --help`, `uv run makolet mcp serve --help`, and
   `uv run makolet export parquet --help` each exited 0 in the locked workspace.
@@ -1934,44 +1943,23 @@ snapshot. A final rescan of the frozen post-SBOM tree remains the next gate.
 
 ## Recovery instructions
 
-The repository is an uncommitted shared workspace; inspect `git status --short` and
-agent messages before editing overlapping files. Restore the locked environment with
+The repository now has local `main` at `54ffb79` and no remote. Inspect
+`git status --short` before later edits. Restore the locked environment with
 `uv sync --all-groups --frozen`. Discover active test services with
 `docker compose ps -a` and `docker ps --format '{{.Names}}\t{{.Ports}}'`; do not stop,
 remove, or reuse a database/container owned by another workstream. Real-database
 tests must use a database whose name contains `test`; benchmark work must use its
-dedicated URL/schema. Resume verification from the first unrecorded remaining gate,
-append exact evidence here, and never paste credentials, signed URLs, or raw retailer
-files into the plan. `MakoletBenchmark` is stopped, port 55434 is closed, and the exact
-temporary `E:\MakoletBenchmarkRun-c53ec893` copy is absent. The accepted artifact is
-the byte-verified repository copy. Before the required performance rerun, verify no
-unrelated high-memory workload is active, recompute the source digest, and repeat the
-same standard command in an isolated high-capacity scope; do not overwrite either
-current artifact.
+dedicated URL/schema. Never paste credentials, signed URLs, or raw retailer files
+into the plan. D/E remain out of scope. Isolated remote standard leftovers are gone.
+A later disposable clone database `makolet_test_clone_54ffb79` was dropped; the
+user-space PostgreSQL 18.4 install on loopback `127.0.0.1:55434` may still be
+running and should be stopped after use. Historical artifacts `b9aababf` and
+`c53ec893` must not be overwritten.
 
 ## Remaining work
 
-- Digest `0daaa40f...` still has current isolated PostgreSQL/S3, seven-source listing,
-  representative live ingestion, reproducible distribution, license/audit/SBOM/image-pin,
-  runtime-SBOM, isolated container/coverage/backup-restore, and canonical offline pytest
-  (1,281 passed / 6 skipped / 77 deselected) evidence. Do not freeze it until the remaining
-  gates below are terminal.
-- Quiet-host standard `scenario=all` passed on digest `0daaa40f...` with
-  `benchmarks/results/20260819-standard-all-0daaa40f.json` (SHA-256
-  `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`). Staging
-  34,767.74, apply 3,958.71, and amplification 2,584.90 rows/s all clear the 70%
-  floors; plan_gate passed; schema cleanup and remote disposable resources are gone.
-  The historical `c53ec893...` failure remains recorded and was not overwritten.
-  Do not freeze the digest until first commit and clean-clone proof are terminal.
-- Standard scan `3f46a47c-b8ce-45ef-8f60-fcd0e10ede7f` is sealed with zero findings and
-  partial coverage. Treat it as current-digest evidence, not a line-by-line review of
-  all 319 files. Scan `4edfe7af-...` remains the pre-fix Matrix empty-wrapper evidence.
-  TAC advisory currently fails `USER_NOT_LOGGED_IN`. Do not start another scan unless
-  `src/` changes.
-- Create the first intentional commit on `main` now that quiet-host performance is
-  green on this digest, after final secrets/`git diff --check` pass, then prove
-  setup/package/static/offline/core service behavior from a clean local clone. No Git
-  remote exists, so remote push/clone evidence cannot be claimed unless the owner
-  configures one.
-- Append the final frozen-tree command counts/hashes and mark Phase 8 complete only
-  after every remaining gate above is terminal and no required evidence is inferred.
+None. Phase 8 is complete on digest `0daaa40f...` and first local `main` commit
+`54ffb79666753aab42986c8fabc53d16c5449d56`. No Git remote exists, so remote
+push/clone evidence is not claimed. Standard scan `3f46a47c-...` remains the sealed
+zero-finding review with partial coverage; TAC advisory failed `USER_NOT_LOGGED_IN`
+and is not a product finding. Do not start another scan unless `src/` changes.
