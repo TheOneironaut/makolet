@@ -12,6 +12,8 @@ boundaries.
 
 ## Current status
 
+2026-08-19T02:41:00+03:00 - Local `main` is now published to public GitHub remote `TheOneironaut/makolet` at https://github.com/TheOneironaut/makolet. `origin/main` matches `9eaefd4`. GitHub first created an empty Apache-2.0 LICENSE-only commit; that placeholder was replaced by the reviewed local history (`54ffb79`, `7de0c19`, `9eaefd4`) with a lease-protected force push. Digest `0daaa40f...` is unchanged. This statement supersedes older no-remote notes below without rewriting their dated evidence.
+
 2026-08-19T02:28:00+03:00 - Leftover cleanup after Phase 8 close is now verified. Remote host `v2202512314232412002` has no `/tmp` or `/home/amitay/tmp` makolet-standard/bench trees, no `makolet`/`0daaa40f` containers or volumes, and no listener on `55518`. Owner loopback databases on `5432`/`55432`/`55434` were left running. Local disposable WSL user-space PostgreSQL at `~/.makolet-local` was stopped and deleted. Local Temp helper scripts, the `0daaa40f` source tarball, credential-bearing SQL/env files, and leftover `makolet-deployment-verify-20260811` were removed. The clean-clone path is gone. `D:` and `E:` have no Makolet leftover roots. The workspace then had only this docs-only ExecPlan leftover-cleanup note plus expected gitignored caches. Digest and first commit are unchanged. This statement supersedes older leftover-cleanup notes below without rewriting their dated evidence.
 
 2026-08-19T02:16:09+03:00 - Phase 8 verification is terminal on digest `0daaa40f0db95f674e61340e66ce30bfdffab5062670b2ed2e40690ab8870805` and first local `main` commit `54ffb79666753aab42986c8fabc53d16c5449d56`. Quiet-host standard `scenario=all` passed with `benchmarks/results/20260819-standard-all-0daaa40f.json` (SHA-256 `ec4a0e17b8edf0562a70315535cb1ab940e166b13b4f32b6289fef4ea161eade`). A clean local clone of that commit on C reproduced frozen setup, advertised CLI help, static checks, offline pytest 1,281 passed / 6 skipped / 77 deselected, and core-service acceptance: disposable `makolet_test_clone_54ffb79` on loopback PostgreSQL 18.4 `127.0.0.1:55434` migrated to head `0011_resource_probe_budgets` with `schema_ready=true` and `makolet doctor` `ok=true`. The clone, test database, and credential file were removed. No remote exists. Phase 8 and overall completion are now marked complete. This statement supersedes older current-status entries below without rewriting their dated evidence.
@@ -1945,7 +1947,7 @@ snapshot. A final rescan of the frozen post-SBOM tree remains the next gate.
 
 ## Recovery instructions
 
-The repository now has local `main` at `54ffb79` and no remote. Inspect
+The repository now has local `main` tracking `origin/main` at https://github.com/TheOneironaut/makolet (`9eaefd4`). Inspect
 `git status --short` before later edits. Restore the locked environment with
 `uv sync --all-groups --frozen`. Discover active test services with
 `docker compose ps -a` and `docker ps --format '{{.Names}}\t{{.Ports}}'`; do not stop,
@@ -1961,7 +1963,6 @@ overwritten.
 ## Remaining work
 
 None. Phase 8 is complete on digest `0daaa40f...` and first local `main` commit
-`54ffb79666753aab42986c8fabc53d16c5449d56`. No Git remote exists, so remote
-push/clone evidence is not claimed. Standard scan `3f46a47c-...` remains the sealed
+`54ffb79666753aab42986c8fabc53d16c5449d56`. Public GitHub remote `TheOneironaut/makolet` now tracks that history at `9eaefd4`. Standard scan `3f46a47c-...` remains the sealed
 zero-finding review with partial coverage; TAC advisory failed `USER_NOT_LOGGED_IN`
 and is not a product finding. Do not start another scan unless `src/` changes.
